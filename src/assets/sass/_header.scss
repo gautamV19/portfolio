@@ -1,0 +1,13 @@
+#header {
+  & > * {
+    display: inline;
+  }
+
+  display: flex;
+  justify-content: space-between;
+
+  #profile-button {
+    position: relative;
+    width: 30%;
+  }
+}
