@@ -11,14 +11,11 @@ import Portfolio from "./Pages/Portfolio";
 
 function App() {
   return (
-    <Container>
-      <Grid container>
-        <Header />
-        {/* <Navtabs /> */}
+    <Grid container>
+      <Header />
 
-        <Footer />
-      </Grid>
-    </Container>
+      <Footer />
+    </Grid>
   );
 }
 

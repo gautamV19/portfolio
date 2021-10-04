@@ -1,24 +1,31 @@
 import React from "react";
-import Navtabs from "./Navtabs";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
+import { Grid, ButtonGroup, Button, Box, Typography } from "@mui/material";
 
 export default function Header() {
   return (
-    <div id="header">
-      <Button href="#" id="profile-button">
-        Gautam Vaja
-      </Button>
-      <ButtonGroup
-        variant="text"
-        aria-label="text button group"
-        fullWidth
-        size="large"
-      >
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
-    </div>
+    <Grid
+      container
+      justifyContent="space-between"
+      sx={{ backgroundColor: "lightcyan", borderRadius: "1em" }}
+    >
+      <Grid item>
+        <Box>
+          <Button sx={{ fontSize: "2.6rem", border: "0.1em dashed grey" }}>
+            Gautam Vaja
+          </Button>
+          <Typography variant="subtitle1" color="grey">
+            Software Devloper
+          </Typography>
+        </Box>
+      </Grid>
+
+      <Grid item>
+        <ButtonGroup size="large" variant="text" aria-label="text button group">
+          <Button>Resume</Button>
+          <Button>Projects</Button>
+          <Button>Contact Me</Button>
+        </ButtonGroup>
+      </Grid>
+    </Grid>
   );
 }
