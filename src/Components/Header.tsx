@@ -1,5 +1,14 @@
 import React from "react";
-import { Grid, ButtonGroup, Button, Box, Typography } from "@mui/material";
+import {
+  Grid,
+  ButtonGroup,
+  Button,
+  Box,
+  Typography,
+  Avatar,
+} from "@mui/material";
+
+import myPhoto from "../assets/Images/myPhoto.jpeg";
 
 export default function Header() {
   return (
@@ -11,6 +20,11 @@ export default function Header() {
       <Grid item>
         <Box>
           <Button sx={{ fontSize: "2.6rem", border: "0.1em dashed grey" }}>
+            <Avatar
+              alt="Remy Sharp"
+              src={myPhoto}
+              sx={{ width: 56, height: 56 }}
+            />
             Gautam Vaja
           </Button>
           <Typography variant="subtitle1" color="grey">

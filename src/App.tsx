@@ -8,12 +8,18 @@ import Profile from "./Pages/Profile";
 
 import Resume from "./Pages/Resume";
 import Portfolio from "./Pages/Portfolio";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Grid container>
+    <Grid
+      container
+      sx={{ backgroundColor: "pink", height: "100%" }}
+      direction="column"
+      justifyContent="space-between"
+    >
       <Header />
-
+      <Home />
       <Footer />
     </Grid>
   );
