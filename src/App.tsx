@@ -1,4 +1,4 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import React from "react";
 
 import Footer from "./Components/Footer";
@@ -12,30 +12,28 @@ import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Grid
-      container
-      sx={{ backgroundColor: "pink", height: "100%" }}
-      direction="column"
+    <Stack
+      sx={{ backgroundColor: "lightcyan", height: "100vh", width: "100%" }}
       justifyContent="space-between"
     >
       <Header />
       <Home />
       <Footer />
-    </Grid>
+    </Stack>
   );
 }
 
 export default App;
 /*
 
-<Grid item xs={12} sm={12} md={4} lg={3} style={{backgroundColor:"green"}}> 
+<Stack item xs={12} sm={12} md={4} lg={3} style={{backgroundColor:"green"}}> 
         <Profile />
-        </Grid>
-       <Grid item xs style={{backgroundColor:"red"}}> 
+        </Stack>
+       <Stack item xs style={{backgroundColor:"red"}}> 
        <Header />
        <Resume />
        <Portfolio />
        <Footer />
-        </Grid>
+        </Stack>
 
 */

@@ -5,7 +5,12 @@ import bg from "../assets/Images/bg.jpg";
 
 function Home() {
   return (
-    <Grid container direction="row" justifyContent="space-evenly" mt={16}>
+    <Grid
+      container
+      direction="row"
+      justifyContent="space-evenly"
+      sx={{ backgroundColor: "lightcyan" }}
+    >
       <Grid item lg={4}>
         <img
           src={myPhoto}
@@ -17,13 +22,15 @@ function Home() {
         container
         item
         lg={6}
-        sx={{ border: "4px dashed yellow" }}
+        sx={{ border: "4px dashed darkgreen", borderRadius: "2rem" }}
         p={2}
         justifyContent="space-evenly"
         alignItems="center"
       >
-        <Grid item>
-          <h1>Hello!</h1>
+        <Grid item alignSelf="flex-start">
+          <Typography variant="h1" color="initial">
+            Hello
+          </Typography>
         </Grid>
         <Grid item>
           <Typography variant="h6" color="initial">
@@ -32,16 +39,28 @@ function Home() {
             coding | Aspiring Entrepreneur
           </Typography>
         </Grid>
-        <Grid item>
-          <ButtonGroup
+        <Grid item container justifyContent="space-evenly">
+          <Button
             size="large"
-            variant="text"
-            aria-label="text button group"
+            variant="contained"
+            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
           >
-            <Button>Resume</Button>
-            <Button>Projects</Button>
-            <Button>Contact Me</Button>
-          </ButtonGroup>
+            Resume
+          </Button>
+          <Button
+            size="large"
+            variant="contained"
+            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
+          >
+            Projects
+          </Button>
+          <Button
+            size="large"
+            variant="contained"
+            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
+          >
+            Contact
+          </Button>
         </Grid>
       </Grid>
     </Grid>

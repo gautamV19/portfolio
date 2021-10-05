@@ -4,4 +4,8 @@
   width: 100%;
   display: inline-block;
 }
+
+Button:hover {
+  background-color: white;
+}
 /*# sourceMappingURL=styles.css.map */

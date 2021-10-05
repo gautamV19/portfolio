@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "AGAA,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EFDZ,KAAK;EEET,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,YAAY;CACxB",
+    "mappings": "AGAA,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EFDZ,KAAK;EEET,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,YAAY;CACxB;;ACLD,AACE,MADI,AACH,MAAM,CAAC;EACN,gBAAgB,EAAE,KAAK;CACxB",
     "sources": [
         "../sass/styles.scss",
         "../sass/variables/_variables.scss",
         "../sass/_header.scss",
-        "../sass/_profile.scss"
+        "../sass/_profile.scss",
+        "../sass/_home.scss"
     ],
     "names": [],
     "file": "styles.css"
