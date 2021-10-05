@@ -1,6 +1,6 @@
 import React from "react";
-import { Grid } from "@mui/icons-material";
+import { grid } from "@mui/system";
 
 export default function Footer() {
-  return <Grid>This is my own portfolio website</Grid>;
+  return <div></div>;
 }
