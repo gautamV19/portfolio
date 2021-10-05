@@ -25,7 +25,9 @@ export default function Header() {
               src={myPhoto}
               sx={{ width: 56, height: 56 }}
             />
-            Gautam Vaja
+            <Typography variant="h3" color="initial">
+              Gautam Vaja
+            </Typography>
           </Button>
           <Typography variant="subtitle1" color="grey">
             Software Devloper

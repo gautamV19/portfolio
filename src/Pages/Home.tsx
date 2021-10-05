@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, ButtonGroup, Button, Typography } from "@mui/material";
 import myPhoto from "../assets/Images/myPhoto.jpeg";
-import bg from "../assets/Images/bg.jpg";
+import MyButton from "../Components/MyButton";
 
 function Home() {
   return (
@@ -40,7 +40,21 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item container justifyContent="space-evenly">
-          <Button
+          <MyButton>Resume</MyButton>
+          <MyButton>Projects</MyButton>
+          <MyButton>Contact</MyButton>
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+}
+
+export default Home;
+// height: "100%", width: "100%",
+
+/*
+
+ <Button
             size="large"
             variant="contained"
             sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
@@ -57,15 +71,12 @@ function Home() {
           <Button
             size="large"
             variant="contained"
-            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
+            sx={{
+              borderRadius: "50%",
+              height: "7rem",
+              width: "7rem",
+            }}
           >
             Contact
           </Button>
-        </Grid>
-      </Grid>
-    </Grid>
-  );
-}
-
-export default Home;
-// height: "100%", width: "100%",
+*/
