@@ -1,5 +1,6 @@
-import { Container, Stack } from "@mui/material";
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Container, Stack } from "@mui/material";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
@@ -9,6 +10,7 @@ import Profile from "./Pages/Profile";
 import Resume from "./Pages/Resume";
 import Portfolio from "./Pages/Portfolio";
 import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -17,23 +19,17 @@ function App() {
       justifyContent="space-between"
     >
       <Header />
-      <Home />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </Router>
       <Footer />
     </Stack>
   );
 }
 
 export default App;
-/*
-
-<Stack item xs={12} sm={12} md={4} lg={3} style={{backgroundColor:"green"}}> 
-        <Profile />
-        </Stack>
-       <Stack item xs style={{backgroundColor:"red"}}> 
-       <Header />
-       <Resume />
-       <Portfolio />
-       <Footer />
-        </Stack>
-
-*/

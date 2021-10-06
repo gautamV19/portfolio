@@ -7,8 +7,7 @@ import {
   Typography,
   Avatar,
 } from "@mui/material";
-
-import myPhoto from "../assets/Images/myPhoto.jpeg";
+import myPhoto from "../assets/Images/myPhoto.png";
 
 export default function Header() {
   return (

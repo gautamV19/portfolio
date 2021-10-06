@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, ButtonGroup, Button, Typography } from "@mui/material";
-import myPhoto from "../assets/Images/myPhoto.jpeg";
+import myPhoto from "../assets/Images/myPhoto.png";
 import MyButton from "../Components/MyButton";
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
         <img
           src={myPhoto}
           alt="My Photo"
-          style={{ height: "300px", width: "300px", borderRadius: "50%" }}
+          style={{ height: "19rem", width: "19rem", borderRadius: "50%" }}
         />
       </Grid>
       <Grid
