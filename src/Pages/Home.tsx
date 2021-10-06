@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, ButtonGroup, Button, Typography } from "@mui/material";
 import myPhoto from "../assets/Images/myPhoto.png";
 import MyButton from "../Components/MyButton";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -40,9 +41,15 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item container justifyContent="space-evenly">
-          <MyButton>Resume</MyButton>
-          <MyButton>Projects</MyButton>
-          <MyButton>Contact</MyButton>
+          <Link to="/resume">
+            <MyButton>Resume</MyButton>
+          </Link>
+          <Link to="/portfolio">
+            <MyButton>Projects</MyButton>
+          </Link>
+          <Link to="/contact">
+            <MyButton>Contact Me</MyButton>
+          </Link>
         </Grid>
       </Grid>
     </Grid>

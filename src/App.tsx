@@ -4,7 +4,6 @@ import { Container, Stack } from "@mui/material";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import Navtabs from "./Components/Navtabs";
 import Profile from "./Pages/Profile";
 
 import Resume from "./Pages/Resume";
@@ -18,16 +17,16 @@ function App() {
       sx={{ backgroundColor: "lightcyan", height: "100vh", width: "100%" }}
       justifyContent="space-between"
     >
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </Stack>
   );
 }
