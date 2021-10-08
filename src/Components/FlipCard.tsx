@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
 import Card from "../Components/Card";
+import { Project } from "../interface";
 
-export default function FlipCard() {
+export default function FlipCard({ title, img, link, description }: Project) {
+  // const { title, img, link, description } = project;
   //type annotation
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
   //typescript interface [auto detect]
@@ -28,11 +30,7 @@ export default function FlipCard() {
             width: "fit-content",
           }}
         >
-          <Card.Front
-            color="yellow"
-            title="Social Media App"
-            img="https://bit.ly/3mzGwT8"
-          />
+          <Card.Front title={title} img={img} />
         </div>
 
         <div
@@ -40,7 +38,7 @@ export default function FlipCard() {
           onMouseLeave={handleHoverOff}
           style={{ backgroundColor: "black", width: "fit-content" }}
         >
-          <Card.Back color="white" link="https://bit.ly/3mzGwT8" />
+          <Card.Back link={link} description={description} />
         </div>
       </ReactCardFlip>
     </div>
