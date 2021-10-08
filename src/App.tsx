@@ -11,6 +11,8 @@ import Portfolio from "./Pages/Portfolio";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 
+//todo add animations while routing and rendering
+
 function App() {
   return (
     <Stack
