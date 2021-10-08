@@ -22,22 +22,11 @@ export default function FlipCard({ title, img, link, description }: Project) {
   return (
     <div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <div
-          onMouseEnter={handleHoverOn}
-          onMouseLeave={handleHoverOff}
-          style={{
-            backgroundColor: "black",
-            width: "fit-content",
-          }}
-        >
+        <div onMouseEnter={handleHoverOn} onMouseLeave={handleHoverOff}>
           <Card.Front title={title} img={img} />
         </div>
 
-        <div
-          onMouseEnter={handleHoverOn}
-          onMouseLeave={handleHoverOff}
-          style={{ backgroundColor: "black", width: "fit-content" }}
-        >
+        <div onMouseEnter={handleHoverOn} onMouseLeave={handleHoverOff}>
           <Card.Back link={link} description={description} />
         </div>
       </ReactCardFlip>

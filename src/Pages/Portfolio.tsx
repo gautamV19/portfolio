@@ -3,9 +3,5 @@ import FlipCard from "../Components/FlipCard";
 import ProjectGroup from "../Components/ProjectGroup";
 
 export default function Portfolio() {
-  return (
-    <div>
-      <ProjectGroup />
-    </div>
-  );
+  return <ProjectGroup />;
 }

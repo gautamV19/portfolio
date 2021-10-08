@@ -1,12 +1,11 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
+
 import Typography from "@mui/material/Typography";
 import social from "../assets/Images/socialMedia.jpg";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 
 type AppPropsFront = {
   title?: string;
@@ -19,49 +18,57 @@ type AppPropsBack = {
 };
 
 const frontside = ({ title = "My Project", img }: AppPropsFront) => (
-  <Box
+  <Grid
+    container
+    justifyContent="space-between"
+    alignItems="center"
     sx={{
-      width: "350px",
-      height: "350px",
+      width: "26vw",
+      height: "30vw",
       boxShadow: 3,
       backgroundColor: "white",
+      borderRadius: "2rem",
+      margin: "15px 0",
     }}
+    p={1}
   >
-    <Typography variant="h4" color="blue">
-      {title}
-    </Typography>
+    <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
     <img
       src={social}
       alt="demo-image"
-      style={{ height: "70%", width: "100%" }}
+      style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
     />
-  </Box>
+  </Grid>
 );
 
 const backside = ({ link, description }: AppPropsBack) => (
-  <Box
+  <Grid
+    container
+    justifyContent="space-between"
+    alignItems="center"
     sx={{
-      width: "350px",
-      height: "350px",
+      width: "26vw",
+      height: "30vw",
       boxShadow: 3,
       backgroundColor: "lightgrey",
+      borderRadius: "2rem",
+      margin: "15px 0",
     }}
+    p={1}
   >
-    <Typography variant="body1" sx={{ backgroundColor: "lightgreen" }}>
+    <Typography variant="body1" sx={{ fontWeight: "400" }}>
       {description ||
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
     </Typography>
 
-    <Link
-      style={{ textDecoration: "none" }}
-      to={{
-        pathname: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
-      }}
-      target="_blank"
+    <Button
+      variant="contained"
+      color="primary"
+      style={{ borderRadius: "2rem" }}
     >
-      {"See Demo"}
-    </Link>
-  </Box>
+      See Demo
+    </Button>
+  </Grid>
 );
 const MyCard = {
   Front: frontside,
