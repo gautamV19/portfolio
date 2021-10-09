@@ -2,16 +2,13 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ContactForm from "../Components/ContactForm";
-import MyButton from "../Components/MyButton";
-import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
     <Grid
       container
-      spacing={3}
-      direction="column"
-      justifyContent="space-around"
+      direction="row"
+      justifyContent="space-evenly"
       alignItems="center"
       wrap="wrap"
       sx={{ backgroundColor: "grey" }}
@@ -21,15 +18,17 @@ export default function Contact() {
         item
         spacing={3}
         direction="column"
-        justifyContent="space-around"
-        alignItems="center"
         wrap="wrap"
-        sx={{ backgroundColor: "grey", width: "40%" }}
+        sx={{ backgroundColor: "grey", width: "40vw" }}
       >
         <Typography variant="h2" color="black">
           Contact
         </Typography>
-        <Typography variant="subtitle1" color="primary">
+        <Typography
+          variant="subtitle1"
+          color="primary"
+          sx={{ marginBottom: "3rem" }}
+        >
           Looking forward to hearing from you
         </Typography>
         <Typography variant="h4" color="initial">
@@ -45,11 +44,8 @@ export default function Contact() {
           gautamiitmee@gmail.com
         </Typography>
       </Grid>
-      <Grid item sx={{ backgroundColor: "grey", width: "40%" }}>
+      <Grid item sx={{ backgroundColor: "grey", width: "40vw" }}>
         <ContactForm />
-        <Link to="/">
-          <MyButton>Submit</MyButton>
-        </Link>
       </Grid>
     </Grid>
   );

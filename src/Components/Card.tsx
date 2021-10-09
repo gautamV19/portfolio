@@ -66,7 +66,9 @@ const backside = ({ link, description }: AppPropsBack) => (
       color="primary"
       style={{ borderRadius: "2rem" }}
     >
-      See Demo
+      <Link to={{ pathname: `${link}` }} target="_blank">
+        See Demo
+      </Link>
     </Button>
   </Grid>
 );

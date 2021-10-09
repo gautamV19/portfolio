@@ -48,7 +48,7 @@ function Home() {
             <MyButton>Projects</MyButton>
           </Link>
           <Link to="/contact">
-            <MyButton>Contact Me</MyButton>
+            <MyButton>Contact</MyButton>
           </Link>
         </Grid>
       </Grid>
