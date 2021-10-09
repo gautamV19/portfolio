@@ -10,7 +10,13 @@ function Home() {
       container
       direction="row"
       justifyContent="space-evenly"
-      sx={{ backgroundColor: "lightcyan" }}
+      sx={{
+        backgroundColor: "lightcyan",
+        // position: "absolute",
+        // top: "20vh",
+        // left: 0,
+        // right: 0,
+      }}
     >
       <Grid item lg={4}>
         <img
@@ -57,33 +63,3 @@ function Home() {
 }
 
 export default Home;
-// height: "100%", width: "100%",
-
-/*
-
- <Button
-            size="large"
-            variant="contained"
-            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
-          >
-            Resume
-          </Button>
-          <Button
-            size="large"
-            variant="contained"
-            sx={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
-          >
-            Projects
-          </Button>
-          <Button
-            size="large"
-            variant="contained"
-            sx={{
-              borderRadius: "50%",
-              height: "7rem",
-              width: "7rem",
-            }}
-          >
-            Contact
-          </Button>
-*/

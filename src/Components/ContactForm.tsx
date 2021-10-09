@@ -1,8 +1,11 @@
 import * as React from "react";
+import { CSSTransition } from "react-transition-group";
+import { Link } from "react-router-dom";
+
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+
 import MyButton from "./MyButton";
-import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   const [value, setValue] = React.useState("Controlled");
@@ -33,9 +36,11 @@ export default function ContactForm() {
         multiline
         rows={4}
       />
-      <Link to="/">
-        <MyButton>Submit</MyButton>
-      </Link>
+      <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
+        <Link to="/">
+          <MyButton>Submit</MyButton>
+        </Link>
+      </CSSTransition>
     </Box>
   );
 }

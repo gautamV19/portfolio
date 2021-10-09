@@ -11,7 +11,13 @@ export default function Contact() {
       justifyContent="space-evenly"
       alignItems="center"
       wrap="wrap"
-      sx={{ backgroundColor: "grey" }}
+      sx={{
+        backgroundColor: "grey",
+        // position: "absolute",
+        // top: "14vh",
+        // left: 0,
+        // right: 0,
+      }}
     >
       <Grid
         container

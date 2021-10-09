@@ -20,7 +20,7 @@ export default function Header() {
     <Grid
       container
       justifyContent="space-between"
-      sx={{ backgroundColor: "lightcyan", borderRadius: "1em" }}
+      sx={{ backgroundColor: "lightcyan", borderRadius: "1em", height: "13vh" }}
     >
       <Grid item>
         <Box>

@@ -11,6 +11,7 @@ function ProjectGroup() {
       justifyContent="space-evenly"
       alignItems="center"
       wrap="wrap"
+      // sx={{ position: "absolute", top: "14vh", left: 0, right: 0 }}
     >
       {projects.map((p) => (
         <FlipCard

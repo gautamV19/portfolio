@@ -10,7 +10,13 @@ export default function Resume() {
       container
       justifyContent="center"
       alignItems="center"
-      sx={{ backgroundColor: "#FFF9EB" }}
+      sx={{
+        backgroundColor: "#FFF9EB",
+        // position: "absolute",
+        // top: "14vh",
+        // left: 0,
+        // right: 0,
+      }}
       lg={10}
       xs={12}
     >

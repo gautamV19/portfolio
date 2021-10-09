@@ -1,7 +1,66 @@
-.Profile {
-  background-color: #FFFE;
-  border-radius: 1rem;
-  width: 100%;
-  display: inline-block;
+.page {
+  display: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+/* slide enter */
+.slide-enter {
+  opacity: 0;
+  -webkit-transform: scale(0.97) translateY(5px);
+          transform: scale(0.97) translateY(5px);
+  z-index: 1;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  -webkit-transition: opacity 3000ms linear 1000ms, -webkit-transform 3000ms ease-in-out 1000ms;
+  transition: opacity 3000ms linear 1000ms, -webkit-transform 3000ms ease-in-out 1000ms;
+  transition: opacity 3000ms linear 1000ms, transform 3000ms ease-in-out 1000ms;
+  transition: opacity 3000ms linear 1000ms, transform 3000ms ease-in-out 1000ms, -webkit-transform 3000ms ease-in-out 1000ms;
+}
+
+/* slide exit */
+.slide-exit {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+.slide-exit.slide-exit-active {
+  opacity: 0;
+  -webkit-transform: scale(0.97) translateY(5px);
+          transform: scale(0.97) translateY(5px);
+  -webkit-transition: opacity 1500ms linear, -webkit-transform 1500ms ease-out;
+  transition: opacity 1500ms linear, -webkit-transform 1500ms ease-out;
+  transition: opacity 1500ms linear, transform 1500ms ease-out;
+  transition: opacity 1500ms linear, transform 1500ms ease-out, -webkit-transform 1500ms ease-out;
+}
+
+.slide-exit-done {
+  opacity: 0;
 }
 /*# sourceMappingURL=styles.css.map */
