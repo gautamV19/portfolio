@@ -1,8 +1,9 @@
 import React from "react";
-import { Grid, ButtonGroup, Button, Typography } from "@mui/material";
+import { Grid, ButtonGroup, Button, Typography, Slide } from "@mui/material";
 import myPhoto from "../assets/Images/myPhoto.png";
 import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
+import { TransitionGroup } from "react-transition-group";
 
 function Home() {
   return (
@@ -47,15 +48,23 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item container justifyContent="space-evenly">
-          <Link to="/resume">
-            <MyButton>Resume</MyButton>
-          </Link>
-          <Link to="/portfolio">
-            <MyButton>Projects</MyButton>
-          </Link>
-          <Link to="/contact">
-            <MyButton>Contact</MyButton>
-          </Link>
+          <TransitionGroup>
+            <Slide in={true} appear={true} timeout={5000}>
+              <Link to="/resume">
+                <MyButton>Resume</MyButton>
+              </Link>
+            </Slide>
+            <Slide in={true} appear={true} timeout={5000}>
+              <Link to="/portfolio">
+                <MyButton>Projects</MyButton>
+              </Link>
+            </Slide>
+            <Slide in={true} appear={true} timeout={5000}>
+              <Link to="/contact">
+                <MyButton>Contact</MyButton>
+              </Link>
+            </Slide>
+          </TransitionGroup>
         </Grid>
       </Grid>
     </Grid>
