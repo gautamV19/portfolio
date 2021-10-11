@@ -43,15 +43,20 @@ export default function Header() {
       </Grid>
 
       <Grid item>
-        <ButtonGroup size="large" variant="text" aria-label="text button group">
-          <Link to="/resume">
-            <Button>Resume</Button>
+        <ButtonGroup
+          size="large"
+          variant="text"
+          aria-label="text button group"
+          style={{ color: "black" }}
+        >
+          <Link to="/resume" style={{ textDecoration: "none" }}>
+            <Button style={{ color: "black" }}>Resume</Button>
           </Link>
-          <Link to="/portfolio">
-            <Button>Projects</Button>
+          <Link to="/portfolio" style={{ textDecoration: "none" }}>
+            <Button style={{ color: "black" }}>Projects</Button>
           </Link>
-          <Link to="/contact">
-            <Button>Contact Me</Button>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <Button style={{ color: "black" }}>Contact Me</Button>
           </Link>
         </ButtonGroup>
       </Grid>

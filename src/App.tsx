@@ -19,7 +19,7 @@ function App() {
     <Stack
       sx={{
         background:
-          "linear-gradient(180deg, rgb(14, 144, 251,0.3) 7%, rgb(68, 9, 230,0.6) 80%)",
+          "linear-gradient(180deg, rgb(255, 255, 255) 7%, f3f3f3 80%)",
         height: "100vh",
         width: "100%",
       }}

@@ -44,10 +44,11 @@
   opacity: 0;
   transform: scale(0.97) translateY(5px);
   transition: opacity 100ms linear, transform 100ms ease-out;
-  color: rgb(68, 9, 230);
+  // color: rgb(68, 9, 230);
+  color: rgb(255, 255, 255);
 }
 .slide-exit-done {
   opacity: 0;
-  color: rgb(14, 144, 251);
+  // color: rgb(14, 144, 251);
   // backgroundcolor: royal;
 }

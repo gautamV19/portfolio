@@ -38,7 +38,7 @@ export default function ContactForm() {
       />
       <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
         <Link to="/">
-          <MyButton>Submit</MyButton>
+          <MyButton style={{ backgroundColor: "#eea302" }}>Submit</MyButton>
         </Link>
       </CSSTransition>
     </Box>

@@ -43,7 +43,7 @@ function Home() {
           <img
             src={myPhoto}
             alt="My Photo"
-            style={{ height: "19rem", width: "19rem", borderRadius: "50%" }}
+            style={{ height: "26rem", width: "26rem", borderRadius: "50%" }}
           />
         </motion.div>
       </Grid>
@@ -51,7 +51,7 @@ function Home() {
         container
         item
         lg={6}
-        sx={{ border: "4px dashed white", borderRadius: "2rem" }}
+        sx={{ border: "4px dashed black", borderRadius: "2rem" }}
         p={2}
         justifyContent="space-evenly"
         alignItems="center"
@@ -78,14 +78,18 @@ function Home() {
             animate={{ scale: [0, 0.5, 1] }}
             transition={{ duration: 1, ease: "linear" }}
           >
-            <Link to="/resume">
-              <MyButton>Resume</MyButton>
+            <Link to="/resume" style={{ textDecoration: "none" }}>
+              <MyButton style={{ backgroundColor: "#eea302" }}>Resume</MyButton>
             </Link>
-            <Link to="/portfolio">
-              <MyButton>Projects</MyButton>
+            <Link to="/portfolio" style={{ textDecoration: "none" }}>
+              <MyButton style={{ backgroundColor: "#ff3b25" }}>
+                Projects
+              </MyButton>
             </Link>
-            <Link to="/contact">
-              <MyButton>Contact</MyButton>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <MyButton style={{ backgroundColor: "#80d8da" }}>
+                Contact
+              </MyButton>
             </Link>
           </motion.div>
         </Grid>
