@@ -17,8 +17,8 @@ export default function Resume() {
         // left: 0,
         // right: 0,
       }}
-      lg={10}
-      xs={12}
+      // lg={10}
+      // xs={12}
     >
       <Box sx={{ margin: "auto", width: "100%", border: "2px dashed black" }}>
         <img

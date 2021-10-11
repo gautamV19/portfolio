@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ContactForm from "../Components/ContactForm";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -19,40 +20,51 @@ export default function Contact() {
         // right: 0,
       }}
     >
-      <Grid
-        container
-        item
-        spacing={3}
-        direction="column"
-        wrap="wrap"
-        sx={{ backgroundColor: "grey", width: "40vw" }}
+      <motion.div
+        animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
+        transition={{ duration: 2, ease: "linear" }}
       >
-        <Typography variant="h2" color="black">
-          Contact
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          color="primary"
-          sx={{ marginBottom: "3rem" }}
+        <Grid
+          container
+          item
+          spacing={3}
+          direction="column"
+          wrap="wrap"
+          sx={{ backgroundColor: "grey", width: "40vw" }}
         >
-          Looking forward to hearing from you
-        </Typography>
-        <Typography variant="h4" color="initial">
-          Phone
-        </Typography>
-        <Typography variant="subtitle1" color="primary">
-          8779536074
-        </Typography>
-        <Typography variant="h4" color="initial">
-          Email:
-        </Typography>
-        <Typography variant="subtitle1" color="primary">
-          gautamiitmee@gmail.com
-        </Typography>
-      </Grid>
-      <Grid item sx={{ backgroundColor: "grey", width: "40vw" }}>
-        <ContactForm />
-      </Grid>
+          <Typography variant="h2" color="black">
+            Contact
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="primary"
+            sx={{ marginBottom: "3rem" }}
+          >
+            Looking forward to hearing from you
+          </Typography>
+          <Typography variant="h4" color="initial">
+            Phone
+          </Typography>
+          <Typography variant="subtitle1" color="primary">
+            8779536074
+          </Typography>
+          <Typography variant="h4" color="initial">
+            Email:
+          </Typography>
+          <Typography variant="subtitle1" color="primary">
+            gautamiitmee@gmail.com
+          </Typography>
+        </Grid>
+      </motion.div>
+
+      <motion.div
+        animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
+        transition={{ duration: 2, ease: "linear" }}
+      >
+        <Grid item sx={{ backgroundColor: "grey", width: "40vw" }}>
+          <ContactForm />
+        </Grid>
+      </motion.div>
     </Grid>
   );
 }

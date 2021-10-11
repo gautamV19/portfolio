@@ -20,7 +20,7 @@ export default function Header() {
     <Grid
       container
       justifyContent="space-between"
-      sx={{ backgroundColor: "lightcyan", borderRadius: "1em", height: "13vh" }}
+      sx={{ borderRadius: "1em", height: "13vh" }}
     >
       <Grid item>
         <Box>
@@ -31,7 +31,7 @@ export default function Header() {
                 src={myPhoto}
                 sx={{ width: 56, height: 56 }}
               />
-              <Typography variant="h3" color="initial">
+              <Typography variant="h3" color="black">
                 Gautam Vaja
               </Typography>
             </Button>

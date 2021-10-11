@@ -17,31 +17,22 @@ import Contact from "./Pages/Contact";
 function App() {
   return (
     <Stack
-      sx={{ backgroundColor: "lightcyan", height: "100vh", width: "100%" }}
+      sx={{
+        background:
+          "linear-gradient(180deg, rgb(14, 144, 251,0.3) 7%, rgb(68, 9, 230,0.6) 80%)",
+        height: "100vh",
+        width: "100%",
+      }}
       justifyContent="space-between"
     >
       <Router>
         <Header />
-        <Route
-          render={({ location }) => {
-            return (
-              <SwitchTransition>
-                <CSSTransition
-                  key={location.key}
-                  timeout={4500}
-                  classNames="slide"
-                >
-                  <Switch location={location}>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/resume" component={Resume} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                    <Route exact path="/contact" component={Contact} />
-                  </Switch>
-                </CSSTransition>
-              </SwitchTransition>
-            );
-          }}
-        />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
         <Footer />
       </Router>
     </Stack>

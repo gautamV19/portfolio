@@ -32,3 +32,26 @@ export const projects: Project[] = [
     description: "",
   },
 ];
+
+// bin...
+
+/**
+ *  <Switch>
+          <TransitionGroup>
+            <Route exact path="/">
+              <Fade in={true} appear={true}>
+                <Home />
+              </Fade>
+            </Route>
+            <Fade in={true} appear={true}>
+              <Route exact path="/resume" component={Resume} />
+            </Fade>
+            <Fade in={true} appear={true}>
+              <Route exact path="/portfolio" component={Portfolio} />
+            </Fade>
+            <Fade in={true} appear={true}>
+              <Route exact path="/contact" component={Contact} />
+            </Fade>
+          </TransitionGroup>
+        </Switch>
+ */

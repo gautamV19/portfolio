@@ -4,3 +4,6 @@ export interface Project {
   link: string;
   description: string;
 }
+export interface MakeStylesInterface {
+  theme: Object;
+}
