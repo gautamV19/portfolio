@@ -28,7 +28,7 @@ function App() {
               <SwitchTransition>
                 <CSSTransition
                   key={location.key}
-                  timeout={450}
+                  timeout={4500}
                   classNames="slide"
                 >
                   <Switch location={location}>
