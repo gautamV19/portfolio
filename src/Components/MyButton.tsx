@@ -9,7 +9,7 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
   width: "10rem",
   // backgroundColor: "lightgreen",
   color: "black",
-  margin: "1rem",
+  margin: "0.3rem",
   fontSize: "1.3em",
   border: "2px solid black",
   "&:hover": {

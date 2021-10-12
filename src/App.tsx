@@ -13,6 +13,7 @@ import {
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import MobileHeader from "./Components/MobileHeader";
+import MobileHome from "./Pages/MobileHome";
 import Profile from "./Pages/Profile";
 
 import Resume from "./Pages/Resume";
@@ -23,6 +24,7 @@ import Contact from "./Pages/Contact";
 import { TransitionGroup } from "react-transition-group";
 import MyRoutes from "./Components/MyRoutes";
 import { AnimatePresence, motion } from "framer-motion";
+import MobileFooter from "./Components/MobileFooter";
 
 //todo add animations while routing and rendering
 
@@ -66,12 +68,12 @@ function App() {
         <Router>
           <MobileHeader />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={MobileHome} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
-          <Footer />
+          <MobileFooter />
         </Router>
       </Stack>
     );
