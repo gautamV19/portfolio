@@ -19,18 +19,26 @@ import MyRoutes from "./Components/MyRoutes";
 
 function App() {
   return (
-    <Box sx={{ display: "flex" }}>
-      <Stack
-        sx={{ backgroundColor: "lightcyan", height: "100vh", width: "100%" }}
-        justifyContent="space-between"
-      >
-        <Router>
-          <Header />
-          <MyRoutes />
-          <Footer />
-        </Router>
-      </Stack>
-    </Box>
+    <Stack
+      sx={{
+        background:
+          "linear-gradient(180deg, rgb(255, 255, 255) 7%, f3f3f3 80%)",
+        height: "100vh",
+        width: "100%",
+      }}
+      justifyContent="space-between"
+    >
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </Router>
+    </Stack>
   );
 }
 

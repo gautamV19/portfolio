@@ -63,10 +63,16 @@ const backside = ({ link, description }: AppPropsBack) => (
 
     <Button
       variant="contained"
-      color="primary"
-      style={{ borderRadius: "2rem" }}
+      style={{ borderRadius: "2rem", backgroundColor: "#eea302" }}
     >
-      <Link to={{ pathname: `${link}` }} target="_blank">
+      <Link
+        to={{ pathname: `${link}` }}
+        target="_blank"
+        style={{
+          color: "white",
+          textDecoration: "none",
+        }}
+      >
         See Demo
       </Link>
     </Button>
