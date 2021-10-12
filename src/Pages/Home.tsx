@@ -1,18 +1,10 @@
 import React from "react";
-<<<<<<< HEAD
-import { Grid, ButtonGroup, Button, Typography, Slide } from "@mui/material";
-import myPhoto from "../assets/Images/myPhoto.png";
-import MyButton from "../Components/MyButton";
-import { Link } from "react-router-dom";
-import { TransitionGroup } from "react-transition-group";
-=======
 import { Grid, Typography } from "@mui/material";
 import myPhoto from "../assets/Images/myPhoto.png";
 import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 // import { MakeStylesInterface } from "../interface";
->>>>>>> mobile-resp
 
 function Home() {
   // const theme = useTheme();
