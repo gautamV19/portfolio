@@ -4,30 +4,8 @@ import myPhoto from "../assets/Images/myPhoto.png";
 import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// import { MakeStylesInterface } from "../interface";
 
 function Home() {
-  // const theme = useTheme();
-  // const useStyles: Function = makeStyles(({ theme }: any) => ({
-  //   root: {
-  //     // height: "100vh",
-  //     backgroundColor: "blue",
-  //     [theme.breakpoints.up("sm")]: {
-  //       backgroundColor: "red",
-  //     },
-  //     [theme.breakpoints.up("md")]: {
-  //       backgroundColor: "green",
-  //     },
-  //     [theme.breakpoints.up("lg")]: {
-  //       backgroundColor: "orange",
-  //     },
-  //     [theme.breakpoints.up("xl")]: {
-  //       backgroundColor: "cyan",
-  //     },
-  //   },
-  // }));
-  // const classes = useStyles();
-
   return (
     <Grid container direction="row" justifyContent="space-evenly">
       <Grid item lg={4}>
@@ -35,7 +13,6 @@ function Home() {
           animate={{
             opacity: [0.2, 0.4, 0.7, 1],
             scale: [0.5, 1, 1.5, 1],
-            // borderRadius: [0, 20, 50, 50, 50],
           }}
           transition={{ duration: 1.3, ease: "easeInOut" }}
           initial={true}

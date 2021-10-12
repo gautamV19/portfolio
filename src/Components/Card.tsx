@@ -56,7 +56,10 @@ const backside = ({ link, description }: AppPropsBack) => (
     }}
     p={1}
   >
-    <Typography variant="body1" sx={{ fontWeight: "400" }}>
+    <Typography
+      variant="body1"
+      sx={{ fontWeight: "400", height: "65%", overflow: "hidden" }}
+    >
       {description ||
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
     </Typography>
