@@ -14,6 +14,7 @@ import Contact from "./Pages/Contact";
 
 import { TransitionGroup } from "react-transition-group";
 import MyRoutes from "./Components/MyRoutes";
+import { AnimatePresence, motion } from "framer-motion";
 
 //todo add animations while routing and rendering
 
