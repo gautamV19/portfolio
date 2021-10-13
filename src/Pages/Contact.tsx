@@ -52,13 +52,13 @@ export default function Contact() {
           <Typography variant="h4" color="initial">
             Phone
           </Typography>
-          <Typography variant="subtitle1" color="primary">
+          <Typography variant="subtitle1" color="inherit">
             8779536074
           </Typography>
           <Typography variant="h4" color="initial">
             Email:
           </Typography>
-          <Typography variant="subtitle1" color="primary">
+          <Typography variant="subtitle1" color="inherit">
             gautamiitmee@gmail.com
           </Typography>
         </motion.span>
