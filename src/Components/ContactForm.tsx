@@ -18,10 +18,9 @@ export default function ContactForm() {
     <Box
       component="form"
       sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
-        width: "40%",
+        "& .MuiTextField-root": { m: 1 },
         display: "inline",
-        backgroundColor: "grey",
+        width: "100%",
       }}
       noValidate
       autoComplete="off"

@@ -3,15 +3,24 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ContactForm from "../Components/ContactForm";
 import { motion } from "framer-motion";
+import { Box, useMediaQuery } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import { CSSTransition } from "react-transition-group";
+
+import MyButton from "../Components/MyButton";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
+  const isMobile = !useMediaQuery("(min-width:450px)");
+  const dir = isMobile ? "column" : "row";
   return (
     <Grid
       container
       direction="row"
-      justifyContent="space-evenly"
-      alignItems="center"
-      wrap="wrap"
+      // justifyContent="space-evenly"
+      // alignItems="center"
+      // wrap="wrap"
+      p={2.6}
       sx={{
         backgroundColor: "grey",
         // position: "absolute",
@@ -19,25 +28,30 @@ export default function Contact() {
         // left: 0,
         // right: 0,
       }}
+      spacing={5}
     >
-      <motion.div
-        animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
-        transition={{ duration: 2, ease: "linear" }}
+      <Grid
+        container
+        item
+        lg={6}
+        xs={10}
+        spacing={3}
+        justifyContent="center"
+        alignItems="center"
+        direction="column"
+        wrap="wrap"
+        sx={{ backgroundColor: "grey", width: "40vw" }}
       >
-        <Grid
-          container
-          item
-          spacing={3}
-          direction="column"
-          wrap="wrap"
-          sx={{ backgroundColor: "grey", width: "40vw" }}
+        <motion.span
+          animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
+          transition={{ duration: 2, ease: "linear" }}
         >
           <Typography variant="h2" color="black">
             Contact
           </Typography>
           <Typography
             variant="subtitle1"
-            color="primary"
+            color="black"
             sx={{ marginBottom: "3rem" }}
           >
             Looking forward to hearing from you
@@ -54,17 +68,58 @@ export default function Contact() {
           <Typography variant="subtitle1" color="primary">
             gautamiitmee@gmail.com
           </Typography>
-        </Grid>
-      </motion.div>
+        </motion.span>
+      </Grid>
 
-      <motion.div
-        animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
-        transition={{ duration: 2, ease: "linear" }}
+      <Grid
+        container
+        item
+        lg={4}
+        md={5}
+        sm={10}
+        xs={11}
+        justifyContent="center"
+        alignItems="center"
       >
-        <Grid item sx={{ backgroundColor: "grey", width: "40vw" }}>
-          <ContactForm />
-        </Grid>
-      </motion.div>
+        <motion.span
+          animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
+          transition={{ duration: 2, ease: "linear" }}
+        >
+          <Box
+            component="form"
+            sx={{
+              "& .MuiTextField-root": { m: 1 },
+              display: "inline",
+              width: "100%",
+            }}
+            noValidate
+            autoComplete="off"
+          >
+            <TextField id="outlined-textarea" label="First Name" multiline />
+            <TextField id="outlined-textarea" label="Last Name" multiline />
+            <TextField id="outlined-textarea" label="Email" multiline />
+            <TextField id="outlined-textarea" label="Subject" multiline />
+            <TextField
+              id="outlined-multiline-static"
+              label="Your message"
+              multiline
+              rows={4}
+            />
+            <CSSTransition
+              in={true}
+              appear={true}
+              timeout={1000}
+              classNames="fade"
+            >
+              <Link to="/">
+                <MyButton style={{ backgroundColor: "#eea302" }}>
+                  Submit
+                </MyButton>
+              </Link>
+            </CSSTransition>
+          </Box>
+        </motion.span>
+      </Grid>
     </Grid>
   );
 }

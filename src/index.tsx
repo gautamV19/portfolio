@@ -14,11 +14,7 @@ theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <ThemeProvider theme={theme}>
-        <Route path="/" component={App} />
-      </ThemeProvider>
-    </Router>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
