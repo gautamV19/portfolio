@@ -11,13 +11,22 @@ function ProjectGroup() {
     <Grid
       container
       xs={12}
-      justifyContent="space-evenly"
+      justifyContent="center"
       alignItems="center"
-      spacing={{ xs: 3, md: 3 }}
-      columns={{ xs: 4, sm: 8, md: 12 }}
+      // spacing={{ xs: 3, md: 3 }}
+      // columns={{ xs: 4, sm: 8, md: 12, lg: 12 }}
+      p={2}
     >
       {projects.map((p) => (
-        <Grid item sm={4} md={4} xs={10} lg={4}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          sm={6}
+          md={4}
+          xs={10}
+          lg={4}
+        >
           <motion.div
             animate={{ scale: [1.1, 1.2, 1] }}
             transition={{ duration: 1, ease: "linear" }}
