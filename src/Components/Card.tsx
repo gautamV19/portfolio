@@ -13,6 +13,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 type AppPropsFront = {
   title?: string;
   img: string;
+  link: string;
 };
 
 type AppPropsBack = {
@@ -37,11 +38,9 @@ function ResponsiveSizes() {
   return size;
 }
 
-function Frontside({ title = "My Project", img }: AppPropsFront) {
+function Frontside({ title = "My Project", img, link }: AppPropsFront) {
   const theme = useTheme();
-  const matchesSm = useMediaQuery(theme.breakpoints.only("sm"));
   const matchesXs = useMediaQuery(theme.breakpoints.only("xs"));
-  const matchesMd = useMediaQuery(theme.breakpoints.only("md"));
 
   return (
     <Grid
@@ -57,7 +56,8 @@ function Frontside({ title = "My Project", img }: AppPropsFront) {
         borderRadius: "2rem",
         margin: "15px 0",
       }}
-      p={1}
+      spacing={2}
+      p={matchesXs ? 2 : 1}
     >
       <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
       <img
@@ -65,6 +65,23 @@ function Frontside({ title = "My Project", img }: AppPropsFront) {
         alt="demo-image"
         style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
       />
+      {matchesXs && (
+        <Button
+          variant="contained"
+          style={{ borderRadius: "0.35rem", backgroundColor: "#eea302" }}
+        >
+          <Link
+            to={{ pathname: `${link}` }}
+            target="_blank"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            See Demo
+          </Link>
+        </Button>
+      )}
     </Grid>
   );
 }

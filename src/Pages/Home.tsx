@@ -12,7 +12,7 @@ function Home() {
         <motion.div
           animate={{
             opacity: [0.2, 0.4, 0.7, 1],
-            scale: [0.5, 1, 1.5, 1],
+            scale: [0.5, 1, 1, 1],
           }}
           transition={{ duration: 1.3, ease: "easeInOut" }}
           initial={true}

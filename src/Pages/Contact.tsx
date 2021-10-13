@@ -28,6 +28,7 @@ export default function Contact() {
         // left: 0,
         // right: 0,
       }}
+      spacing={5}
     >
       <Grid
         container
@@ -35,6 +36,8 @@ export default function Contact() {
         lg={6}
         xs={10}
         spacing={3}
+        justifyContent="center"
+        alignItems="center"
         direction="column"
         wrap="wrap"
         sx={{ backgroundColor: "grey", width: "40vw" }}
@@ -68,7 +71,16 @@ export default function Contact() {
         </motion.span>
       </Grid>
 
-      <Grid container item lg={4} md={5} sm={10} xs={11}>
+      <Grid
+        container
+        item
+        lg={4}
+        md={5}
+        sm={10}
+        xs={11}
+        justifyContent="center"
+        alignItems="center"
+      >
         <motion.span
           animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
           transition={{ duration: 2, ease: "linear" }}
