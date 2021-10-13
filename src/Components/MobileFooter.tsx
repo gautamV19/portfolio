@@ -54,7 +54,7 @@ export default function Footer() {
               style={{ width: "24px", height: "24px" }}
             ></img>
           </Grid>
-          <Typography variant="body1" color="inherit">
+          <Typography variant="body1" p={2} color="inherit">
             © 2021 By Gautam Vaja
           </Typography>
         </Grid>

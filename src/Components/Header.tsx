@@ -10,13 +10,6 @@ import {
 import myPhoto from "../assets/Images/myPhoto.png";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
-import MobNavBar from "./MobNavMenu";
-
-import Resume from "../Pages/Resume";
-import Portfolio from "../Pages/Portfolio";
-import Home from "../Pages/Home";
-import Contact from "../Pages/Contact";
-
 export default function Header() {
   return (
     <Grid

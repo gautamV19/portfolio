@@ -17,16 +17,9 @@ export default function Contact() {
     <Grid
       container
       direction="row"
-      // justifyContent="space-evenly"
-      // alignItems="center"
-      // wrap="wrap"
       p={2.6}
       sx={{
         backgroundColor: "grey",
-        // position: "absolute",
-        // top: "14vh",
-        // left: 0,
-        // right: 0,
       }}
       spacing={5}
     >

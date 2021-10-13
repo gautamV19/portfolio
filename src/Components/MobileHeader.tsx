@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Grid,
-  ButtonGroup,
-  Button,
-  Box,
-  Typography,
-  Avatar,
-} from "@mui/material";
-import myPhoto from "../assets/Images/myPhoto.png";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { Grid, Button, Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import MenuBox from "./MenuBox";
 
 export default function MobileHeader() {

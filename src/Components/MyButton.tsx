@@ -7,7 +7,6 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
   borderRadius: "50%",
   height: "10rem",
   width: "10rem",
-  // backgroundColor: "lightgreen",
   color: "black",
   margin: "0.3rem",
   fontSize: "1.3em",

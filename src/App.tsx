@@ -1,32 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {
-  Container,
-  Stack,
-  Grid,
-  Box,
-  Slide,
-  useMediaQuery,
-} from "@mui/material";
-// import { CSSTransition, SwitchTransition } from "react-transition-group";
+import { Stack, useMediaQuery } from "@mui/material";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import MobileHeader from "./Components/MobileHeader";
-import MobileHome from "./Pages/MobileHome";
-import Profile from "./Pages/Profile";
+import MobileFooter from "./Components/MobileFooter";
 
+import MobileHome from "./Pages/MobileHome";
 import Resume from "./Pages/Resume";
 import Portfolio from "./Pages/Portfolio";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
-
-import { TransitionGroup } from "react-transition-group";
-import MyRoutes from "./Components/MyRoutes";
-import { AnimatePresence, motion } from "framer-motion";
-import MobileFooter from "./Components/MobileFooter";
-
-//todo add animations while routing and rendering
 
 function App() {
   const matches = useMediaQuery("(min-width:450px)");

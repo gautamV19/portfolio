@@ -25,7 +25,6 @@ function ResponsiveSizes() {
   const theme = useTheme();
   const matchesSm = useMediaQuery(theme.breakpoints.only("sm"));
   const matchesXs = useMediaQuery(theme.breakpoints.only("xs"));
-  // const matchesMd = useMediaQuery(theme.breakpoints.only("md"));
 
   const height = { lg: "39vh", sm: "39vh", xs: "39vh" };
   const width = { lg: "24vw", sm: "40vw", xs: "80vw" };
