@@ -23,7 +23,7 @@ export default function FlipCard({ title, img, link, description }: Project) {
     <div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <div onMouseEnter={handleHoverOn} onMouseLeave={handleHoverOff}>
-          <Card.Front title={title} img={img} />
+          <Card.Front title={title} img={img} link={link} />
         </div>
 
         <div onMouseEnter={handleHoverOn} onMouseLeave={handleHoverOff}>

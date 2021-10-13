@@ -11,10 +11,12 @@ export default function Footer() {
       <AppBar position="static" color="inherit">
         <Grid
           container
-          justifyContent="space-evenly"
-          pt={3}
-          pb={6}
-          sx={{ borderTop: "2px black solid" }}
+          direction="column"
+          justifyContent="center"
+          spacing={2}
+          p={2}
+          sx={{ borderTop: "2px grey solid" }}
+          mt={2}
         >
           <Grid item>
             <Typography variant="h6" color="initial">
