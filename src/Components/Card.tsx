@@ -87,11 +87,6 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
 }
 
 function Backside({ link, description }: AppPropsBack) {
-  const theme = useTheme();
-  const matchesSm = useMediaQuery(theme.breakpoints.only("sm"));
-  const matchesXs = useMediaQuery(theme.breakpoints.only("xs"));
-  const matchesMd = useMediaQuery(theme.breakpoints.only("md"));
-
   return (
     <Grid
       container
