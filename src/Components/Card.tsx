@@ -19,12 +19,13 @@ type AppPropsBack = {
 
 const frontside = ({ title = "My Project", img }: AppPropsFront) => (
   <Grid
+    className="cardfront"
     container
     justifyContent="space-between"
     alignItems="center"
     sx={{
-      width: "26vw",
-      height: "30vw",
+      width: "250px",
+      height: "305px",
       boxShadow: 3,
       backgroundColor: "white",
       borderRadius: "2rem",
@@ -47,8 +48,8 @@ const backside = ({ link, description }: AppPropsBack) => (
     justifyContent="space-between"
     alignItems="center"
     sx={{
-      width: "26vw",
-      height: "30vw",
+      width: "240px",
+      height: "285px",
       boxShadow: 3,
       backgroundColor: "lightgrey",
       borderRadius: "2rem",
@@ -56,10 +57,7 @@ const backside = ({ link, description }: AppPropsBack) => (
     }}
     p={1}
   >
-    <Typography
-      variant="body1"
-      sx={{ fontWeight: "400", height: "65%", overflow: "hidden" }}
-    >
+    <Typography variant="body1" sx={{ fontWeight: "400" }}>
       {description ||
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
     </Typography>
