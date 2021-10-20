@@ -60,6 +60,7 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
       <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
       <img
         src={img}
+        alt={demo}
         style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
       />
       {matchesXs && (
