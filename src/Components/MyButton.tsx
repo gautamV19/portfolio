@@ -1,7 +1,5 @@
-import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Button, { ButtonProps } from "@mui/material/Button";
-import { fontSize } from "@mui/system";
 
 const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
   borderRadius: "50%",

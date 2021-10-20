@@ -89,7 +89,7 @@ function MobileHome() {
         >
           <img
             src={myPhoto}
-            alt="My Photo"
+            alt="profile"
             style={{
               height: "15rem",
               width: "15rem",
