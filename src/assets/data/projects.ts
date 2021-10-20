@@ -1,34 +1,39 @@
 import { Project } from "../../interface";
+import cart from "../Images/Portfolio/cart.png";
+import socialMedia from "../Images/Portfolio/socialmedia.png";
+import rollthedice from "../Images/Portfolio/rollthedice.png";
+import portfolio from "../Images/Portfolio/portfolio.png";
+import analogclock from "../Images/Portfolio/analogclock.png";
 
 export const projects: Project[] = [
   {
     title: "My Porfolio",
-    img: "https://drive.google.com/file/d/1H7bLrNIoDezI-XdOc_K4HdF9a3KxpY6U/view?usp=sharing",
-    link: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+    img: `${portfolio}`,
+    link: "/",
     description: "",
   },
   {
     title: "Socail App",
-    img: "https://drive.google.com/file/d/1gfW551hZ2C1tAafZ8RvfbWLmQJJopyXM/view?usp=sharing",
-    link: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+    img: `${socialMedia}`,
+    link: "https://social-media-app19gautam.herokuapp.com/",
     description: "",
   },
   {
-    title: "Sunshine",
-    img: "https://drive.google.com/file/d/1H7bLrNIoDezI-XdOc_K4HdF9a3KxpY6U/view?usp=sharing",
-    link: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+    title: "Cart",
+    img: `${cart}`,
+    link: "https://cart1319.herokuapp.com/",
     description: "",
   },
   {
-    title: "Sunshine",
-    img: "https://drive.google.com/file/d/1H7bLrNIoDezI-XdOc_K4HdF9a3KxpY6U/view?usp=sharing",
-    link: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+    title: "Roll the Dice",
+    img: `${rollthedice}`,
+    link: "http://ma13gautamvaja.me/Roll-the-dice/",
     description: "",
   },
   {
-    title: "Sunshine",
-    img: "https://drive.google.com/file/d/1H7bLrNIoDezI-XdOc_K4HdF9a3KxpY6U/view?usp=sharing",
-    link: "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+    title: "Analog Clock",
+    img: `${analogclock}`,
+    link: "http://ma13gautamvaja.me/analog-clock/",
     description: "",
   },
 ];
