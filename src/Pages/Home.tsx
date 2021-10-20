@@ -19,7 +19,7 @@ function Home() {
         >
           <img
             src={myPhoto}
-            alt="My Photo"
+            alt="Profile"
             style={{ height: "26rem", width: "26rem", borderRadius: "50%" }}
           />
         </motion.div>

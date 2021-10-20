@@ -1,9 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import ContactForm from "../Components/ContactForm";
 import { motion } from "framer-motion";
-import { Box, useMediaQuery } from "@mui/material";
+import { Box } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { CSSTransition } from "react-transition-group";
 
@@ -11,8 +10,6 @@ import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
-  const isMobile = !useMediaQuery("(min-width:450px)");
-  const dir = isMobile ? "column" : "row";
   return (
     <Grid
       container
@@ -105,7 +102,13 @@ export default function Contact() {
               classNames="fade"
             >
               <Link to="/">
-                <MyButton style={{ backgroundColor: "#eea302" }}>
+                <MyButton
+                  style={{
+                    backgroundColor: "#eea302",
+                    height: "130px",
+                    width: "130px",
+                  }}
+                >
                   Submit
                 </MyButton>
               </Link>
