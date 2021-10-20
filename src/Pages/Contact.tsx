@@ -105,7 +105,13 @@ export default function Contact() {
               classNames="fade"
             >
               <Link to="/">
-                <MyButton style={{ backgroundColor: "#eea302" }}>
+                <MyButton
+                  style={{
+                    backgroundColor: "#eea302",
+                    height: "130px",
+                    width: "130px",
+                  }}
+                >
                   Submit
                 </MyButton>
               </Link>

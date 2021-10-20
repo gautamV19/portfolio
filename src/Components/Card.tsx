@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
+// import cart from "../assets/Images/Portfolio/cart.png";
+
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
@@ -60,7 +62,7 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
     >
       <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
       <img
-        src={social}
+        src={img}
         alt="demo-image"
         style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
       />
