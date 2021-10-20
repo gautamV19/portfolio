@@ -2,7 +2,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 
 import Typography from "@mui/material/Typography";
-import social from "../assets/Images/socialMedia.jpg";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -60,8 +59,8 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
     >
       <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
       <img
-        src={social}
-        alt="demo-image"
+        src={img}
+        alt="demo"
         style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
       />
       {matchesXs && (
