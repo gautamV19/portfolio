@@ -20,7 +20,7 @@ export default function Header() {
       <Grid item>
         <Box>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <Button sx={{ fontSize: "2.6rem", border: "0.1em dashed grey" }}>
+            <Button sx={{ fontSize: "2.6rem", border: "0.13em dashed grey" }}>
               <Avatar
                 alt="Remy Sharp"
                 src={myPhoto}

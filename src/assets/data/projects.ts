@@ -3,38 +3,41 @@ import cart from "../Images/Portfolio/cart.png";
 import socialMedia from "../Images/Portfolio/socialmedia.png";
 import rollthedice from "../Images/Portfolio/rollthedice.png";
 import portfolio from "../Images/Portfolio/portfolio.png";
-import analogclock from "../Images/Portfolio/analogclock.png";
+import typegr from "../Images/Portfolio/typegr.png";
 
 export const projects: Project[] = [
   {
     title: "My Porfolio",
     img: `${portfolio}`,
     link: "/",
-    description: "",
+    description:
+      "My personal portfolio website tells almost everything about myself. Stack Used : ReactJS, material UI and Frammer Motion",
   },
   {
     title: "Socail App",
     img: `${socialMedia}`,
     link: "https://social-media-app19gautam.herokuapp.com/",
-    description: "",
+    description:
+      "A social media app to connect with people where you can make post and comments. Stack Used: MongoDB, ExpressJS, ReactJS, NodeJS",
   },
   {
     title: "Cart",
     img: `${cart}`,
     link: "https://cart1319.herokuapp.com/",
-    description: "",
+    description: "A simple cart app, I made this to practice React JS.",
   },
   {
     title: "Roll the Dice",
     img: `${rollthedice}`,
     link: "http://ma13gautamvaja.me/Roll-the-dice/",
-    description: "",
+    description: "A simple game using HTML, CSS and JavaScript.",
   },
   {
-    title: "Analog Clock",
-    img: `${analogclock}`,
-    link: "http://ma13gautamvaja.me/analog-clock/",
-    description: "",
+    title: "Todos Api using TypeGraphQL",
+    img: `${typegr}`,
+    link: "https://github.com/gautamV19/Todos-App",
+    description:
+      "A graphQL api for todos app with authentication. Stack used: TypeGraphQL, Apollo server, Typescript",
   },
 ];
 

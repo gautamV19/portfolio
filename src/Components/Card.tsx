@@ -57,7 +57,11 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
       spacing={2}
       p={matchesXs ? 2 : 1}
     >
-      <Box style={{ fontSize: "2rem", fontFamily: "cursive" }}>{title}</Box>
+      <Box
+        style={{ fontSize: "2rem", fontFamily: "fantasy", fontWeight: "bold" }}
+      >
+        {title}
+      </Box>
       <img
         src={img}
         alt="demo"
