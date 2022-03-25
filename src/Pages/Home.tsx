@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <Grid container direction="row" justifyContent="space-evenly">
+    <Grid container direction="row" justifyContent="space-evenly" mt={1}>
       <Grid item lg={4}>
         <motion.div
           animate={{

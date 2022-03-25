@@ -9,8 +9,14 @@ export default function Footer() {
       animate={{ translateY: [200, 0], opacity: [0.3, 1] }}
       transition={{ duration: 1.5, ease: "linear" }}
     >
-      <AppBar position="static" color="primary">
-        <Grid container justifyContent="space-evenly" pt={3} pb={6}>
+      <AppBar position="static" color="primary" sx={{ marginTop: "13px" }}>
+        <Grid
+          container
+          justifyContent="space-evenly"
+          pt={3}
+          pb={6}
+          flexWrap="wrap"
+        >
           <Grid item>
             <Typography variant="h5" color="secondary">
               Phone
@@ -103,9 +109,11 @@ export default function Footer() {
               </Grid>
             </Grid>
           </Grid>
-          <Typography variant="h4" color="secondary">
-            © 2022 By Gautam Vaja
-          </Typography>
+          <Grid item>
+            <Typography variant="h4" color="secondary">
+              © 2022 By Gautam Vaja
+            </Typography>
+          </Grid>
         </Grid>
       </AppBar>
     </motion.div>

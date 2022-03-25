@@ -12,11 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <Grid
-      container
-      justifyContent="space-between"
-      sx={{ borderRadius: "1em", height: "13vh" }}
-    >
+    <Grid container justifyContent="space-between" spacing={2}>
       <Grid item>
         <Box>
           <Link to="/" style={{ textDecoration: "none" }}>

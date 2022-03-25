@@ -19,6 +19,7 @@ export default function Contact() {
         backgroundColor: "grey",
       }}
       spacing={5}
+      mt={2}
     >
       <Grid
         container
@@ -26,6 +27,7 @@ export default function Contact() {
         lg={6}
         xs={10}
         spacing={3}
+        ml={1}
         justifyContent="center"
         alignItems="center"
         direction="column"
