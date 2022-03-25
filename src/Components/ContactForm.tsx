@@ -3,7 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import { TextField, Typography } from "@mui/material";
 
 import MyButton from "./MyButton";
 
@@ -37,7 +37,11 @@ export default function ContactForm() {
       />
       <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
         <Link to="/">
-          <MyButton style={{ backgroundColor: "#eea302" }}>Submit</MyButton>
+          <MyButton>
+            <Typography variant="h5" color="secondary" m={1}>
+              contact
+            </Typography>
+          </MyButton>
         </Link>
       </CSSTransition>
     </Box>

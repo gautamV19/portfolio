@@ -11,7 +11,6 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
   border: "2px solid black",
   "&:hover": {
     fontWeight: "900",
-    backgroundColor: "white",
   },
 }));
 
