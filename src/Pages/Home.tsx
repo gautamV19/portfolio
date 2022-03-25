@@ -41,12 +41,12 @@ function Home() {
         <Grid item>
           <motion.div
             animate={{ opacity: [0, 0.5, 1] }}
-            transition={{ duration: 1, ease: "linear" }}
+            transition={{ duration: 2, ease: "linear" }}
           >
-            <Typography variant="h6" color="initial">
+            <Typography variant="h5" color="initial">
               Full stack developer | Product Management | Entrepreneurship
             </Typography>
-            <Typography variant="h6" color="initial">
+            <Typography variant="h5" color="initial">
               EE at IIT M | Buiding softwares for real impact
             </Typography>
           </motion.div>

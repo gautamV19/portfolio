@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import ListItem from "@mui/material/ListItem";  
+import ListItem from "@mui/material/ListItem";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import AppBar from "@mui/material/AppBar";
@@ -10,6 +10,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import Typography from "@mui/material/Typography";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -33,13 +35,16 @@ export default function FullScreenDialog() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        <img
-          src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976215.png?token=exp=1634043723~hmac=ad15f39b4458725d1c2ad08c4ef7a68a"
-          alt="menu"
-          style={{ height: "1rem", width: "1rem" }}
-        />
-      </Button>
+      <IconButton
+        size="large"
+        edge="start"
+        color="inherit"
+        aria-label="menu"
+        sx={{ mr: 2 }}
+        onClick={handleClickOpen}
+      >
+        <MenuIcon />
+      </IconButton>
       <Dialog
         fullScreen
         open={open}
@@ -58,24 +63,30 @@ export default function FullScreenDialog() {
           </IconButton>
           <ListItem button>
             <Link to="/resume" style={{ textDecoration: "none" }}>
-              <Button style={{ color: "black" }} onClick={handleClose}>
-                Resume
+              <Button color="secondary" onClick={handleClose}>
+                <Typography variant="h4" color="initial">
+                  Resume
+                </Typography>
               </Button>
             </Link>
           </ListItem>
           <Divider />
           <ListItem button>
             <Link to="/portfolio" style={{ textDecoration: "none" }}>
-              <Button style={{ color: "black" }} onClick={handleClose}>
-                Projects
+              <Button color="secondary" onClick={handleClose}>
+                <Typography variant="h4" color="initial">
+                  Portfolio
+                </Typography>
               </Button>
             </Link>
           </ListItem>
           <Divider />
           <ListItem button>
             <Link to="/contact" style={{ textDecoration: "none" }}>
-              <Button style={{ color: "black" }} onClick={handleClose}>
-                Contact Me
+              <Button color="secondary" onClick={handleClose}>
+                <Typography variant="h4" color="initial">
+                  Contact me
+                </Typography>
               </Button>
             </Link>
           </ListItem>

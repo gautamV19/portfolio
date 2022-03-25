@@ -10,13 +10,7 @@ export default function Footer() {
       transition={{ duration: 1.5, ease: "linear" }}
     >
       <AppBar position="static" color="primary">
-        <Grid
-          container
-          justifyContent="space-evenly"
-          pt={3}
-          pb={6}
-          sx={{ borderTop: "2px black solid" }}
-        >
+        <Grid container justifyContent="space-evenly" pt={3} pb={6}>
           <Grid item>
             <Typography variant="h5" color="secondary">
               Phone
@@ -35,7 +29,7 @@ export default function Footer() {
           </Grid>
           <Grid item>
             <Typography variant="h5" color="initial">
-              Email:
+              Email
             </Typography>
             <Link
               to="#"

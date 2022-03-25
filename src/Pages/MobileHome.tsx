@@ -18,8 +18,13 @@ function MobileHome() {
         alignItems="center"
       >
         <Grid item>
-          <Typography variant="h1" color="initial">
-            Hello
+          <Typography
+            variant="h4"
+            color="initial"
+            mb={4}
+            sx={{ fontWeight: "600" }}
+          >
+            Jai Swaminarayan
           </Typography>
         </Grid>
         <Grid item>
@@ -28,9 +33,10 @@ function MobileHome() {
             transition={{ duration: 1, ease: "linear" }}
           >
             <Typography variant="h6" color="initial">
-              Institute WebOps Coordinator @ IIT Madras | Project Management
-              Coordinator @ Nirmaan IITM | Currently doing web development and
-              coding | Aspiring Entrepreneur
+              Full stack developer | Product Management | Entrepreneurship
+            </Typography>
+            <Typography variant="h6" color="initial" mt={2} mb={2}>
+              EE at IIT M | Buiding softwares for real impact
             </Typography>
           </motion.div>
         </Grid>
@@ -42,9 +48,9 @@ function MobileHome() {
             <Link to="/resume" style={{ textDecoration: "none" }}>
               <MyButton
                 style={{
-                  height: "5rem",
-                  width: "5rem",
-                  fontSize: "0.7rem",
+                  height: "5.5rem",
+                  width: "5.5rem",
+                  fontSize: "0.9rem",
                   backgroundColor: "#eea302",
                 }}
               >
@@ -54,9 +60,9 @@ function MobileHome() {
             <Link to="/portfolio" style={{ textDecoration: "none" }}>
               <MyButton
                 style={{
-                  height: "5rem",
-                  width: "5rem",
-                  fontSize: "0.7rem",
+                  height: "5.5rem",
+                  width: "5.5rem",
+                  fontSize: "0.9rem",
                   backgroundColor: "#ff3b25",
                 }}
               >
@@ -66,9 +72,9 @@ function MobileHome() {
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <MyButton
                 style={{
-                  height: "5rem",
-                  width: "5rem",
-                  fontSize: "0.7rem",
+                  height: "5.5rem",
+                  width: "5.5rem",
+                  fontSize: "0.9rem",
                   backgroundColor: "#80d8da",
                 }}
               >
@@ -78,7 +84,7 @@ function MobileHome() {
           </motion.div>
         </Grid>
       </Grid>
-      <Grid item container xs={11} justifyContent="center">
+      <Grid item container xs={11} justifyContent="center" mb={2}>
         <motion.div
           animate={{
             opacity: [0.2, 0.4, 0.7, 1],
@@ -91,8 +97,8 @@ function MobileHome() {
             src={myPhoto}
             alt="profile"
             style={{
-              height: "15rem",
-              width: "15rem",
+              height: "15.5rem",
+              width: "15.5rem",
               borderRadius: "50%",
             }}
           />
