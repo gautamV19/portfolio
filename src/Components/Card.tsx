@@ -42,7 +42,6 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
 
   return (
     <Grid
-      className="cardfront"
       container
       justifyContent="space-between"
       alignItems="center"
@@ -57,15 +56,15 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
       spacing={2}
       p={matchesXs ? 2 : 1}
     >
-      <Box
-        style={{ fontSize: "2rem", fontFamily: "fantasy", fontWeight: "bold" }}
-      >
-        {title}
-      </Box>
+      <Box style={{ fontSize: "2rem" }}>{title}</Box>
       <img
         src={img}
         alt="demo"
-        style={{ borderRadius: "2rem", height: "70%", width: "100%" }}
+        style={{
+          borderRadius: "0rem 0em 2rem 2em ",
+          height: "70%",
+          width: "100%",
+        }}
       />
       {matchesXs && (
         <Button
@@ -105,8 +104,8 @@ function Backside({ link, description }: AppPropsBack) {
       p={1}
     >
       <Typography
-        variant="body1"
-        sx={{ fontWeight: "400", height: "65%", overflow: "hidden" }}
+        variant="h6"
+        sx={{ fontWeight: "550", height: "65%", overflow: "clip" }}
       >
         {description ||
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
@@ -114,7 +113,11 @@ function Backside({ link, description }: AppPropsBack) {
 
       <Button
         variant="contained"
-        style={{ borderRadius: "2rem", backgroundColor: "#eea302" }}
+        style={{
+          borderRadius: "2rem",
+          fontSize: "1.5rem",
+          backgroundColor: "#eea302",
+        }}
       >
         <Link
           to={{ pathname: `${link}` }}

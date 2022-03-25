@@ -4,6 +4,9 @@ import socialMedia from "../Images/Portfolio/socialmedia.png";
 import rollthedice from "../Images/Portfolio/rollthedice.png";
 import portfolio from "../Images/Portfolio/portfolio.png";
 import typegr from "../Images/Portfolio/typegr.png";
+import cfi from "../Images/Portfolio/cfiwebsite.png";
+import scoring from "../Images/Portfolio/scoringDetector.png";
+import rtk from "../Images/Portfolio/rtk.png";
 
 export const projects: Project[] = [
   {
@@ -21,23 +24,38 @@ export const projects: Project[] = [
       "A social media app to connect with people where you can make post and comments. Stack Used: MongoDB, ExpressJS, ReactJS, NodeJS",
   },
   {
-    title: "Cart",
-    img: `${cart}`,
-    link: "https://cart1319.herokuapp.com/",
-    description: "A simple cart app, I made this to practice React JS.",
+    title: "CFI website",
+    img: `${cfi}`,
+    link: "https://cfi.iitm.ac.in",
+    description:
+      "Contributed in building the main site for cfi with other developers in my college. Stack used: React with typescript, Material UI, Framer Motion",
+  },
+  {
+    title: "Scoring Detector",
+    img: `${scoring}`,
+    link: "https://github.com/gautamV19/scoring-detector9",
+    description:
+      "Upload a video it will show is the event scoring or not. My contribution was to make api in flask to interact with ml code, and also node backend to upload the video. Stack used: Node, Express, Flask",
+  },
+  {
+    title: "Dogs gallery",
+    img: `${rtk}`,
+    link: "https://github.com/gautamV19/reduxToolKit",
+    description:
+      "Fetch dogs picture and show using ReduxToolkit. This is learning project.",
+  },
+  {
+    title: "Chat Api",
+    img: `${typegr}`,
+    link: "https://github.com/gautamV19/chat-app-graphql",
+    description:
+      "Basic chating to send and get message using TypeGraphQL. Stack used: TypeGraphQL, Apollo server, Typescript",
   },
   {
     title: "Roll the Dice",
     img: `${rollthedice}`,
     link: "http://ma13gautamvaja.me/Roll-the-dice/",
     description: "A simple game using HTML, CSS and JavaScript.",
-  },
-  {
-    title: "Todos Api using TypeGraphQL",
-    img: `${typegr}`,
-    link: "https://github.com/gautamV19/Todos-App",
-    description:
-      "A graphQL api for todos app with authentication. Stack used: TypeGraphQL, Apollo server, Typescript",
   },
 ];
 
