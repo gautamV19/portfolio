@@ -40,24 +40,40 @@ export default function Contact() {
             Contact
           </Typography>
           <Typography
-            variant="subtitle1"
-            color="secondary"
+            variant="h5"
+            color="#0072B1"
             sx={{ marginBottom: "3rem" }}
           >
-            Looking forward to hearing from you
+            Looking forward to hearing from you...
           </Typography>
-          <Typography variant="h4" color="initial">
+          <Typography variant="h4" color="secondary">
             Phone
           </Typography>
-          <Typography variant="subtitle1" color="inherit">
-            8779536074
-          </Typography>
-          <Typography variant="h4" color="initial">
+          <Link
+            to={{
+              pathname: `https://api.whatsapp.com/send/?phone=8779536074&text=I%20got%20contact%20from%20your%20website.`,
+            }}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Typography variant="h5" color="#25D366" fontWeight="600">
+              8779536074
+            </Typography>
+          </Link>
+          <Typography variant="h4" color="secondary" mt={3}>
             Email:
           </Typography>
-          <Typography variant="subtitle1" color="inherit">
-            gautamiitmee@gmail.com
-          </Typography>
+          <Link
+            to="#"
+            onClick={(e) => {
+              window.location.href = "mailto:thegautam.vaja@gmail.com";
+              e.preventDefault();
+            }}
+          >
+            <Typography variant="h5" color="#DB4437">
+              thegautam.vaja@gmail.com
+            </Typography>
+          </Link>
         </motion.span>
       </Grid>
 
@@ -101,7 +117,7 @@ export default function Contact() {
               timeout={1000}
               classNames="fade"
             >
-              <Link to="/">
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <MyButton
                   style={{
                     backgroundColor: "#eea302",
