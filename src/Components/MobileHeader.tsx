@@ -15,12 +15,12 @@ export default function MobileHeader() {
         <Box>
           <Link to="/" style={{ textDecoration: "none" }}>
             <Button sx={{ fontSize: "1.3rem", border: "0.1em dashed grey" }}>
-              <Typography variant="h4" color="black">
+              <Typography variant="h4" color="secondary">
                 Gautam Vaja
               </Typography>
             </Button>
           </Link>
-          <Typography variant="subtitle1" color="grey">
+          <Typography variant="subtitle1" color="secondary">
             Software Devloper
           </Typography>
         </Box>

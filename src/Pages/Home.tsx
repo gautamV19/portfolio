@@ -34,8 +34,8 @@ function Home() {
         alignItems="center"
       >
         <Grid item alignSelf="flex-start">
-          <Typography variant="h1" color="initial">
-            Hello
+          <Typography variant="h2" color="initial" fontWeight="600">
+            Jai Swaminarayan
           </Typography>
         </Grid>
         <Grid item>
@@ -44,9 +44,10 @@ function Home() {
             transition={{ duration: 1, ease: "linear" }}
           >
             <Typography variant="h6" color="initial">
-              Institute WebOps Coordinator @ IIT Madras | Project Management
-              Coordinator @ Nirmaan IITM | Currently doing web development and
-              coding | Aspiring Entrepreneur
+              Full stack developer | Product Management | Entrepreneurship
+            </Typography>
+            <Typography variant="h6" color="initial">
+              EE at IIT M | Buiding softwares for real impact
             </Typography>
           </motion.div>
         </Grid>

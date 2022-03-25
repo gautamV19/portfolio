@@ -36,12 +36,12 @@ export default function Contact() {
           animate={{ translateX: [-150, -50, -25, 0], opacity: [0, 0.5, 1] }}
           transition={{ duration: 2, ease: "linear" }}
         >
-          <Typography variant="h2" color="black">
+          <Typography variant="h2" color="secondary">
             Contact
           </Typography>
           <Typography
             variant="subtitle1"
-            color="black"
+            color="secondary"
             sx={{ marginBottom: "3rem" }}
           >
             Looking forward to hearing from you

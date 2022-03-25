@@ -22,36 +22,47 @@ export default function Header() {
           <Link to="/" style={{ textDecoration: "none" }}>
             <Button sx={{ fontSize: "2.6rem", border: "0.13em dashed grey" }}>
               <Avatar
-                alt="Remy Sharp"
+                alt="Gautam Vaja"
                 src={myPhoto}
                 sx={{ width: 56, height: 56 }}
               />
-              <Typography variant="h3" color="black">
+              <Typography
+                variant="h3"
+                color="secondary"
+                sx={{ fontWeight: "600" }}
+              >
                 Gautam Vaja
               </Typography>
             </Button>
           </Link>
-          <Typography variant="subtitle1" color="grey">
+          <Typography variant="h5" color="secondary" m={1}>
             Software Devloper
           </Typography>
         </Box>
       </Grid>
 
       <Grid item>
-        <ButtonGroup
-          size="large"
-          variant="text"
-          aria-label="text button group"
-          style={{ color: "black" }}
-        >
+        <ButtonGroup size="large" variant="text" aria-label="text button group">
           <Link to="/resume" style={{ textDecoration: "none" }}>
-            <Button style={{ color: "black" }}>Resume</Button>
+            <Button>
+              <Typography variant="h4" color="secondary" m={1}>
+                resume
+              </Typography>
+            </Button>
           </Link>
           <Link to="/portfolio" style={{ textDecoration: "none" }}>
-            <Button style={{ color: "black" }}>Projects</Button>
+            <Button>
+              <Typography variant="h4" color="secondary" m={1}>
+                portfolio
+              </Typography>
+            </Button>
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Button style={{ color: "black" }}>Contact Me</Button>
+            <Button>
+              <Typography variant="h4" color="secondary" m={1}>
+                contact
+              </Typography>
+            </Button>
           </Link>
         </ButtonGroup>
       </Grid>
