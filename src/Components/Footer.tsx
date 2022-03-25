@@ -59,8 +59,7 @@ export default function Footer() {
               <Grid item>
                 <Link
                   to={{
-                    pathname:
-                      "https://www.linkedin.com/in/gautam-vaja-b80115209/",
+                    pathname: "https://www.linkedin.com/in/gautamvaja13/",
                   }}
                   target="_blank"
                   style={{
