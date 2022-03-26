@@ -1,12 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {
-  Stack,
-  useMediaQuery,
-  createTheme,
-  ThemeProvider,
-  Typography,
-} from "@mui/material";
+import { Stack, useMediaQuery } from "@mui/material";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";

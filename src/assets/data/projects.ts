@@ -1,5 +1,5 @@
 import { Project } from "../../interface";
-import cart from "../Images/Portfolio/cart.png";
+
 import socialMedia from "../Images/Portfolio/socialmedia.png";
 import rollthedice from "../Images/Portfolio/rollthedice.png";
 import portfolio from "../Images/Portfolio/portfolio.png";
@@ -12,9 +12,9 @@ export const projects: Project[] = [
   {
     title: "My Porfolio",
     img: `${portfolio}`,
-    link: "/",
+    link: "https://github.com/gautamV19/portfolio",
     description:
-      "My personal portfolio website tells almost everything about myself. Stack Used : ReactJS, material UI and Frammer Motion",
+      "My personal portfolio website tells almost everything about myself. Stack Used : ReactJS, Material UI and Frammer Motion",
   },
   {
     title: "Socail App",

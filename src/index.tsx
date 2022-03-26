@@ -20,6 +20,14 @@ const theme = createTheme({
   },
 });
 
+// const theme2 = createMuiTheme({
+//   props: {
+//     MuiButton: {
+//       disableElevation: true,
+//     },
+//   },
+// });
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

@@ -8,7 +8,7 @@ import { useMediaQuery, Container } from "@mui/material";
 function ProjectGroup() {
   return (
     <Grid container xs={12} justifyContent="center" alignItems="center" p={2}>
-      {projects.map((p) => (
+      {projects.map((p, i) => (
         <Grid
           item
           container
@@ -17,6 +17,7 @@ function ProjectGroup() {
           md={4}
           xs={10}
           lg={4}
+          key={i}
         >
           <motion.div
             animate={{ scale: [1.1, 1.2, 1] }}

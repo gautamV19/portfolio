@@ -11,6 +11,7 @@ export default function Resume() {
         height={matches ? "570px" : "1200px"}
         width="100%"
         style={{ marginTop: "10px" }}
+        title="Gautam_Vaja_Resume"
       ></iframe>
     </div>
   );
