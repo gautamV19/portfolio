@@ -109,7 +109,7 @@ export default function Footer() {
             </Grid>
           </Grid>
           <Typography variant="h4" p={2} color="inherit">
-            © 2021 By Gautam Vaja
+            © 2022 By Gautam Vaja
           </Typography>
         </Grid>
       </AppBar>
