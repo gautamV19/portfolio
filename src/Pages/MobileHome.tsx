@@ -50,9 +50,9 @@ function MobileHome() {
                 <Link to="/resume" style={{ textDecoration: "none" }}>
                   <MyButton
                     style={{
-                      height: "5.3rem",
-                      width: "5.3rem",
-                      fontSize: "0.9rem",
+                      height: "6.8rem",
+                      width: "6.8rem",
+                      fontSize: "1.3rem",
                       backgroundColor: "#eea302",
                     }}
                   >
@@ -64,9 +64,9 @@ function MobileHome() {
                 <Link to="/portfolio" style={{ textDecoration: "none" }}>
                   <MyButton
                     style={{
-                      height: "5.3rem",
-                      width: "5.3rem",
-                      fontSize: "0.9rem",
+                      height: "6.8rem",
+                      width: "6.8rem",
+                      fontSize: "1.3rem",
                       backgroundColor: "#ff3b25",
                     }}
                   >
@@ -78,9 +78,9 @@ function MobileHome() {
                 <Link to="/contact" style={{ textDecoration: "none" }}>
                   <MyButton
                     style={{
-                      height: "5.3rem",
-                      width: "5.3rem",
-                      fontSize: "0.9rem",
+                      height: "6.8rem",
+                      width: "6.8rem",
+                      fontSize: "1.3rem",
                       backgroundColor: "#80d8da",
                     }}
                   >
@@ -105,8 +105,8 @@ function MobileHome() {
             src={myPhoto}
             alt="profile"
             style={{
-              height: "15.3rem",
-              width: "15.3rem",
+              height: "16.8rem",
+              width: "16.8rem",
               borderRadius: "50%",
             }}
           />
