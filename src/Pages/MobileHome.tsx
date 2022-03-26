@@ -40,47 +40,55 @@ function MobileHome() {
             </Typography>
           </motion.div>
         </Grid>
-        <Grid item container justifyContent="space-evenly">
+        <Grid item container>
           <motion.div
             animate={{ scale: [0, 0.5, 1] }}
             transition={{ duration: 1, ease: "linear" }}
           >
-            <Link to="/resume" style={{ textDecoration: "none" }}>
-              <MyButton
-                style={{
-                  height: "5.5rem",
-                  width: "5.5rem",
-                  fontSize: "0.9rem",
-                  backgroundColor: "#eea302",
-                }}
-              >
-                Resume
-              </MyButton>
-            </Link>
-            <Link to="/portfolio" style={{ textDecoration: "none" }}>
-              <MyButton
-                style={{
-                  height: "5.5rem",
-                  width: "5.5rem",
-                  fontSize: "0.9rem",
-                  backgroundColor: "#ff3b25",
-                }}
-              >
-                Projects
-              </MyButton>
-            </Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <MyButton
-                style={{
-                  height: "5.5rem",
-                  width: "5.5rem",
-                  fontSize: "0.9rem",
-                  backgroundColor: "#80d8da",
-                }}
-              >
-                Contact
-              </MyButton>
-            </Link>
+            <Grid item container spacing={3} justifyContent="center">
+              <Grid item>
+                <Link to="/resume" style={{ textDecoration: "none" }}>
+                  <MyButton
+                    style={{
+                      height: "5.3rem",
+                      width: "5.3rem",
+                      fontSize: "0.9rem",
+                      backgroundColor: "#eea302",
+                    }}
+                  >
+                    Resume
+                  </MyButton>
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link to="/portfolio" style={{ textDecoration: "none" }}>
+                  <MyButton
+                    style={{
+                      height: "5.3rem",
+                      width: "5.3rem",
+                      fontSize: "0.9rem",
+                      backgroundColor: "#ff3b25",
+                    }}
+                  >
+                    Projects
+                  </MyButton>
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link to="/contact" style={{ textDecoration: "none" }}>
+                  <MyButton
+                    style={{
+                      height: "5.3rem",
+                      width: "5.3rem",
+                      fontSize: "0.9rem",
+                      backgroundColor: "#80d8da",
+                    }}
+                  >
+                    Contact
+                  </MyButton>
+                </Link>
+              </Grid>
+            </Grid>
           </motion.div>
         </Grid>
       </Grid>
@@ -97,8 +105,8 @@ function MobileHome() {
             src={myPhoto}
             alt="profile"
             style={{
-              height: "15.5rem",
-              width: "15.5rem",
+              height: "15.3rem",
+              width: "15.3rem",
               borderRadius: "50%",
             }}
           />
