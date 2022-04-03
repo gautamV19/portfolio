@@ -17,14 +17,14 @@ export const projects: Project[] = [
       "My personal portfolio website tells almost everything about myself. Stack Used : ReactJS, Material UI and Frammer Motion",
   },
   {
-    title: "Socail App",
+    title: "Social App",
     img: `${socialMedia}`,
     link: "https://social-media-app19gautam.herokuapp.com/",
     description:
       "A social media app to connect with people where you can make post and comments. Stack Used: MongoDB, ExpressJS, ReactJS, NodeJS",
   },
   {
-    title: "CFI website",
+    title: "CFI Website",
     img: `${cfi}`,
     link: "https://cfi.iitm.ac.in",
     description:
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Upload a video it will show is the event scoring or not. My contribution was to make api in flask to interact with ml code, and also node backend to upload the video. Stack used: Node, Express, Flask",
   },
   {
-    title: "Dogs gallery",
+    title: "Dogs Gallery",
     img: `${rtk}`,
     link: "https://github.com/gautamV19/reduxToolKit",
     description:
