@@ -5,6 +5,8 @@ import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import homeData from "../assets/data/home";
+
 function Home() {
   return (
     <Grid container direction="row" justifyContent="space-evenly" mt={1}>
@@ -35,7 +37,7 @@ function Home() {
       >
         <Grid item alignSelf="flex-start">
           <Typography variant="h2" color="initial" fontWeight="600">
-            Jai Swaminarayan
+            {homeData.gretings}
           </Typography>
         </Grid>
         <Grid item>
@@ -44,10 +46,10 @@ function Home() {
             transition={{ duration: 2, ease: "linear" }}
           >
             <Typography variant="h5" color="initial">
-              Full stack developer | Product Management | Entrepreneurship
+              {homeData.headline1}
             </Typography>
-            <Typography variant="h5" color="initial">
-              EE at IIT M | Buiding softwares for real impact
+            <Typography variant="h5" color="initial" textAlign="center">
+              {homeData.headline2}
             </Typography>
           </motion.div>
         </Grid>
