@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
@@ -10,6 +10,12 @@ import MyButton from "../Components/MyButton";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [sub, setSub] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <Grid
       container
@@ -103,15 +109,36 @@ export default function Contact() {
             noValidate
             autoComplete="off"
           >
-            <TextField id="outlined-textarea" label="First Name" multiline />
-            <TextField id="outlined-textarea" label="Last Name" multiline />
-            <TextField id="outlined-textarea" label="Email" multiline />
-            <TextField id="outlined-textarea" label="Subject" multiline />
+            <TextField
+              id="outlined-textarea"
+              label="First Name"
+              multiline
+              onChange={(e) => setFname(e.target.value)}
+            />
+            <TextField
+              id="outlined-textarea"
+              label="Last Name"
+              multiline
+              onChange={(e) => setLname(e.target.value)}
+            />
+            <TextField
+              id="outlined-textarea"
+              label="Email"
+              multiline
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <TextField
+              id="outlined-textarea"
+              label="Subject"
+              multiline
+              onChange={(e) => setSub(e.target.value)}
+            />
             <TextField
               id="outlined-multiline-static"
               label="Your message"
               multiline
               rows={4}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <CSSTransition
               in={true}
@@ -119,7 +146,20 @@ export default function Contact() {
               timeout={1000}
               classNames="fade"
             >
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link
+                to="/"
+                onClick={(e) => {
+                  window.location.href = `mailto:thegautam.vaja@gmail.com?subject=${sub}&body=${
+                    "This is " +
+                    fname +
+                    " " +
+                    lname +
+                    ". I am reaching out to you from http://gautamvaja.netlify.app. I would like to talk about " +
+                    message
+                  }&cc=ee20b144@smail.iitm.ac.in`;
+                  e.preventDefault();
+                }}
+              >
                 <MyButton
                   style={{
                     backgroundColor: "#eea302",
