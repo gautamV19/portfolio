@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 export default function Contact() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
-  const [email, setEmail] = useState("");
   const [sub, setSub] = useState("");
   const [message, setMessage] = useState("");
 
@@ -121,12 +120,7 @@ export default function Contact() {
               multiline
               onChange={(e) => setLname(e.target.value)}
             />
-            <TextField
-              id="outlined-textarea"
-              label="Email"
-              multiline
-              onChange={(e) => setEmail(e.target.value)}
-            />
+            <TextField id="outlined-textarea" label="Email" multiline />
             <TextField
               id="outlined-textarea"
               label="Subject"
