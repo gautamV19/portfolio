@@ -7,7 +7,7 @@ export default function Resume() {
   return (
     <div>
       <iframe
-        src="https://drive.google.com/file/d/1p_oxNvakx9Wb_UjP6gaQeR9gKzI6orTZ/preview"
+        src="https://drive.google.com/file/d/1Nh_wgDOlUelxSbVbnzfR4UV7b3xcaXwm/preview"
         height={matches ? "570px" : "1200px"}
         width="100%"
         style={{ marginTop: "10px" }}

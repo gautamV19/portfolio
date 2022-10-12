@@ -20,8 +20,8 @@ function ProjectGroup() {
           key={i}
         >
           <motion.div
-            animate={{ scale: [1.1, 1.2, 1] }}
-            transition={{ duration: 1, ease: "linear" }}
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 0.3, ease: "linear" }}
           >
             <FlipCard
               title={p.title}

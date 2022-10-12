@@ -25,8 +25,8 @@ function ResponsiveSizes() {
   const matchesSm = useMediaQuery(theme.breakpoints.only("sm"));
   const matchesXs = useMediaQuery(theme.breakpoints.only("xs"));
 
-  const height = { lg: "39vh", sm: "39vh", xs: "39vh" };
-  const width = { lg: "24vw", sm: "40vw", xs: "80vw" };
+  const height = { lg: "45vh", sm: "39vh", xs: "39vh" };
+  const width = { lg: "30vw", sm: "40vw", xs: "80vw" };
 
   const size = {
     h: (matchesSm && height.sm) || (matchesXs && height.xs) || height.lg,
@@ -50,19 +50,28 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
         height: `${ResponsiveSizes().h}`,
         boxShadow: 3,
         backgroundColor: "white",
-        borderRadius: "2rem",
+        borderRadius: "0.7rem",
         margin: "15px 0",
       }}
       spacing={2}
       p={matchesXs ? 2 : 1}
     >
-      <Box style={{ fontSize: "2rem" }}>{title}</Box>
+      <Box
+        style={{
+          fontSize: "2rem",
+          textAlign: "center",
+          fontFamily: "Monospace",
+          width: "100%",
+        }}
+      >
+        {title}
+      </Box>
       <img
         src={img}
         alt="demo"
         style={{
-          borderRadius: "0rem 0em 2rem 2em ",
-          height: "70%",
+          borderRadius: "0rem 0em 0.7rem 0.7em ",
+          height: "60%",
           width: "100%",
         }}
       />
@@ -98,7 +107,7 @@ function Backside({ link, description }: AppPropsBack) {
         height: `${ResponsiveSizes().h}`,
         boxShadow: 3,
         backgroundColor: "lightgrey",
-        borderRadius: "2rem",
+        borderRadius: "0.7rem",
         margin: "15px 0",
       }}
       p={1}
@@ -114,7 +123,7 @@ function Backside({ link, description }: AppPropsBack) {
       <Button
         variant="contained"
         style={{
-          borderRadius: "2rem",
+          borderRadius: "0.7rem",
           fontSize: "1.5rem",
           backgroundColor: "#eea302",
         }}

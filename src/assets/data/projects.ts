@@ -7,21 +7,34 @@ import typegr from "../Images/Portfolio/typegr.png";
 import cfi from "../Images/Portfolio/cfiwebsite.png";
 import scoring from "../Images/Portfolio/scoringDetector.png";
 import rtk from "../Images/Portfolio/rtk.png";
+import instispace from "../Images/Portfolio/instispace.png";
+import nss from "../Images/Portfolio/nss.png";
+import google from "../Images/Portfolio/google.png";
+import mapsmap from "../Images/Portfolio/mapsmap.png";
+import logi from "../Images/Portfolio/logi.png";
+import editor from "../Images/Portfolio/editor.png";
 
 export const projects: Project[] = [
   {
-    title: "My Porfolio",
-    img: `${portfolio}`,
-    link: "https://github.com/gautamV19/portfolio",
+    title: "Instispace",
+    img: `${instispace}`,
+    link: "https://play.google.com/store/apps/details?id=com.cfi.instispace",
     description:
-      "My personal portfolio website tells almost everything about myself. Stack Used : ReactJS, Material UI and Frammer Motion",
+      "An app to share opportunities and events inside IIT Madras; it can be used to connect with like-minded people",
   },
   {
-    title: "Social App",
-    img: `${socialMedia}`,
-    link: "https://social-media-app19gautam.herokuapp.com/",
+    title: "Science to School",
+    img: `${nss}`,
+    link: "",
     description:
-      "A social media app to connect with people where you can make post and comments. Stack Used: MongoDB, ExpressJS, ReactJS, NodeJS",
+      "This website is made to connect schools with the NSS team at IIT Madras. With this website, the NSS team can easily send notifications of events and announcements to the schools. They can also take tests and send assignments.",
+  },
+  {
+    title: "Time Lapse Data Visualizer",
+    img: `${google}`,
+    link: "https://www.dropbox.com/s/ibgjeft3ym9y3tf/Final%20Google%20Demo%2016%20sep.mov?dl=0",
+    description:
+      "An Youtube data analytics tool for content creators; Developed under guidance of Google. Proposed a Layer-wise and hierarchical representation of all the trading videos in the selected time.",
   },
   {
     title: "CFI Website",
@@ -31,6 +44,19 @@ export const projects: Project[] = [
       "Contributed in building the main site for cfi with other developers in my college. Stack used: React with typescript, Material UI, Framer Motion",
   },
   {
+    title: "Mapsmap",
+    img: `${mapsmap}`,
+    link: "https://github.com/gautamV19/mapsmap-server",
+    description:
+      "Crowdsource and crowdfund collaboration on maps of problems – Hackathon project in a team of 8. Most voted submission on the website and got selected as a Software Developer into Maps DAO community.",
+  },
+  {
+    title: "Logistics Lab Bussiness Site",
+    img: `${logi}`,
+    link: "https://web1.iitm.ac.in/logistics/",
+    description: "Worked as a Frontend Developer to build the bussiness site.",
+  },
+  {
     title: "Scoring Detector",
     img: `${scoring}`,
     link: "https://github.com/gautamV19/scoring-detector9",
@@ -38,24 +64,10 @@ export const projects: Project[] = [
       "Upload a video it will show is the event scoring or not. My contribution was to make api in flask to interact with ml code, and also node backend to upload the video. Stack used: Node, Express, Flask",
   },
   {
-    title: "Dogs Gallery",
-    img: `${rtk}`,
-    link: "https://github.com/gautamV19/reduxToolKit",
-    description:
-      "Fetch dogs picture and show using ReduxToolkit. This is learning project.",
-  },
-  {
-    title: "Chat Api",
-    img: `${typegr}`,
-    link: "https://github.com/gautamV19/chat-app-graphql",
-    description:
-      "Basic chating to send and get message using TypeGraphQL. Stack used: TypeGraphQL, Apollo server, Typescript",
-  },
-  {
-    title: "Roll the Dice",
-    img: `${rollthedice}`,
-    link: "http://ma13gautamvaja.me/Roll-the-dice/",
-    description: "A simple game using HTML, CSS and JavaScript.",
+    title: "Code Editor",
+    img: `${editor}`,
+    link: "https://dev-editor.netlify.app",
+    description: "HTML, CSS and JavaScript code editor for rapid development",
   },
 ];
 
