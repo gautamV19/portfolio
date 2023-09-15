@@ -1,6 +1,6 @@
 const homeData = {
   gretings: "Jay Swaminarayan",
-  headline1: "IIT Madras '24 | 4 Star Codechef | Software Development",
-  headline2: "Looking for SDE intern opportunities in HFT",
+  headline1: "Google | Aspiring Software Developer/ Quant Developer ",
+  headline2: " EE'24, IIT Madras | C++ | Python | JavaScript",
 };
 export default homeData;
