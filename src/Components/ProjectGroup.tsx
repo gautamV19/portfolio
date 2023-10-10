@@ -27,6 +27,7 @@ function ProjectGroup() {
               title={p.title}
               link={p.link}
               img={p.img}
+              demo={p.demo}
               description={p.description}
             />
           </motion.div>

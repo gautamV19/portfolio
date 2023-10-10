@@ -18,6 +18,7 @@ type AppPropsFront = {
 type AppPropsBack = {
   description?: string;
   link: string;
+  demo: string;
 };
 
 function ResponsiveSizes() {
@@ -96,7 +97,7 @@ function Frontside({ title = "My Project", img, link }: AppPropsFront) {
   );
 }
 
-function Backside({ link, description }: AppPropsBack) {
+function Backside({ demo, link, description }: AppPropsBack) {
   return (
     <Grid
       container
@@ -120,25 +121,48 @@ function Backside({ link, description }: AppPropsBack) {
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
       </Typography>
 
-      <Button
-        variant="contained"
-        style={{
-          borderRadius: "0.7rem",
-          fontSize: "1.5rem",
-          backgroundColor: "#eea302",
-        }}
-      >
-        <Link
-          to={{ pathname: `${link}` }}
-          target="_blank"
+      {link && (
+        <Button
+          variant="contained"
           style={{
-            color: "white",
-            textDecoration: "none",
+            borderRadius: "0.7rem",
+            fontSize: "1.5rem",
+            backgroundColor: "#eea302",
           }}
         >
-          See Demo
-        </Link>
-      </Button>
+          <Link
+            to={{ pathname: `${link}` }}
+            target="_blank"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            Link
+          </Link>
+        </Button>
+      )}
+      {demo && (
+        <Button
+          variant="contained"
+          style={{
+            borderRadius: "0.7rem",
+            fontSize: "1.5rem",
+            backgroundColor: "#eea302",
+          }}
+        >
+          <Link
+            to={{ pathname: `${demo}` }}
+            target="_blank"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            Demo
+          </Link>
+        </Button>
+      )}
     </Grid>
   );
 }

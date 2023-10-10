@@ -4,7 +4,13 @@ import ReactCardFlip from "react-card-flip";
 import Card from "../Components/Card";
 import { Project } from "../interface";
 
-export default function FlipCard({ title, img, link, description }: Project) {
+export default function FlipCard({
+  title,
+  img,
+  link,
+  demo,
+  description,
+}: Project) {
   // const { title, img, link, description } = project;
   //type annotation
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
@@ -27,7 +33,7 @@ export default function FlipCard({ title, img, link, description }: Project) {
         </div>
 
         <div onMouseEnter={handleHoverOn} onMouseLeave={handleHoverOff}>
-          <Card.Back link={link} description={description} />
+          <Card.Back link={link} description={description} demo={demo} />
         </div>
       </ReactCardFlip>
     </div>

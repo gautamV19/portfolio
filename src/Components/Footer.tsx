@@ -110,7 +110,7 @@ export default function Footer() {
           </Grid>
           <Grid item>
             <Typography variant="h4" color="secondary">
-              © 2022 By Gautam Vaja
+              © 2024 By Gautam Vaja
             </Typography>
           </Grid>
         </Grid>
