@@ -69,24 +69,8 @@ export default function Footer() {
                 >
                   <img
                     alt="LinkedIn"
-                    src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/6ea5b4a88f0b4f91945b40499aa0af00.webp"
-                    style={{ width: "26px", height: "26px" }}
-                  />
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link
-                  to={{ pathname: "https://twitter.com/gautamvaja7" }}
-                  target="_blank"
-                  style={{
-                    color: "white",
-                    textDecoration: "none",
-                  }}
-                >
-                  <img
-                    alt="Twitter"
-                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.webp"
-                    style={{ width: "26px", height: "26px" }}
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3258446/linkedin-icon-original.svg"
+                    style={{ width: "25px", height: "25px" }}
                   />
                 </Link>
               </Grid>
@@ -101,7 +85,23 @@ export default function Footer() {
                 >
                   <img
                     alt="Github"
-                    src="https://cdn-icons-png.flaticon.com/512/733/733609.png"
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3195425/github-icon-original.svg"
+                    style={{ width: "26px", height: "26px" }}
+                  />
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link
+                  to={{ pathname: "https://medium.com/@thegautam.vaja" }}
+                  target="_blank"
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  <img
+                    alt="Medium"
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7913085/medium-icon-original.svg"
                     style={{ width: "26px", height: "26px" }}
                   />
                 </Link>

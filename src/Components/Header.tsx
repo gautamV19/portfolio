@@ -21,13 +21,11 @@ export default function Header() {
                 fontSize: "2.6rem",
                 borderBottom: "0.05em dashed grey",
                 borderLeft: "0.05em dashed grey",
+                ":hover": {
+                  backgroundColor: "whitesmoke",
+                },
               }}
             >
-              <Avatar
-                alt="Gautam Vaja"
-                src={myPhoto}
-                sx={{ width: 56, height: 56 }}
-              />
               <Typography
                 variant="h3"
                 color="secondary"
@@ -37,30 +35,48 @@ export default function Header() {
               </Typography>
             </Button>
           </Link>
-          <Typography variant="h5" color="secondary" m={1}>
-            Software Devloper
-          </Typography>
         </Box>
       </Grid>
 
       <Grid item>
         <ButtonGroup size="large" variant="text" aria-label="text button group">
           <Link to="/resume" style={{ textDecoration: "none" }}>
-            <Button>
+            <Button
+              sx={{
+                ":hover": {
+                  borderBottom: "2px solid black",
+                  backgroundColor: "#eea302",
+                },
+              }}
+            >
               <Typography variant="h4" color="secondary" m={1}>
                 resume
               </Typography>
             </Button>
           </Link>
           <Link to="/portfolio" style={{ textDecoration: "none" }}>
-            <Button>
+            <Button
+              sx={{
+                ":hover": {
+                  borderBottom: "2px solid black",
+                  backgroundColor: "#ff3b25",
+                },
+              }}
+            >
               <Typography variant="h4" color="secondary" m={1}>
                 portfolio
               </Typography>
             </Button>
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Button>
+            <Button
+              sx={{
+                ":hover": {
+                  borderBottom: "2px solid black",
+                  backgroundColor: "#80d8da",
+                },
+              }}
+            >
               <Typography variant="h4" color="secondary" m={1}>
                 contact
               </Typography>

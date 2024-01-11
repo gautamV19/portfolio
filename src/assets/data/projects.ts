@@ -24,95 +24,121 @@ export const projects: Project[] = [
     img: `${google}`,
     demo: "https://drive.google.com/file/d/1tqAdfVlO3n4cORGmiVYETRwg1ROsXJAx/view?usp=share_link",
     link: "https://drive.google.com/file/d/1XdN_xs_uZPlkkraOEJz4KGcnB-8OpmpK/view",
-    description:
-      "• Created a category-specific time series data visualizer for YouTube to monitor trends relevant to YouTubers • Automated the backend to clean and process raw YouTube data for dynamic time-series data visualization",
+    description: [
+      "Created a category-specific time series data visualizer for YouTube to monitor trends relevant to YouTubers",
+      "Automated the backend to clean and process raw YouTube data for dynamic time-series data visualization",
+    ],
   },
   {
     title: "Crypto Trading Simulator",
     img: `${crypto}`,
     link: "https://github.com/gautamV19/Crypto-Trading-Plateform",
     demo: "",
-    description:
-      "• Created a C++ crypto trading system with the time-frame-wise order book execution and matching algorithm • Employed object-oriented programming, including static functions, classes and error handling for reliability • Implemented features like importing orders from CSV, tracking wallet balances, and rapid bid-ask resolution",
+    description: [
+      "Created a C++ crypto trading system with the time-frame-wise order book execution and matching algorithm",
+      "Employed object-oriented programming, including static functions, classes and error handling for reliability",
+      "Implemented features like importing orders from CSV, tracking wallet balances, and rapid bid-ask resolution",
+    ],
   },
   {
     title: "Stock Price Forecasting",
     img: `${tsa}`,
     link: "https://github.com/gautamV19/Stock-Price-Forecasting/blob/master/TSA_Microsoft_Price.ipynb",
     demo: "",
-    description:
-      "• Performed time series analysis and deep learning on Microsoft Stock's Price using Y-Finance data in Python • Employed data cleaning and smoothing methods; implemented ARIMA and GARCH models on closing price • Used CNN Model to achieve a remarkable 90% accuracy rate with 1000 epochs with 2 neural network layers",
+    description: [
+      "Performed time series analysis and deep learning on Microsoft Stock's Price using Y-Finance data in Python",
+      "Employed data cleaning and smoothing methods; implemented ARIMA and GARCH models on closing price",
+      "Used CNN Model to achieve a remarkable 90% accuracy rate with 1000 epochs with 2 neural network layers",
+    ],
   },
   {
     title: "Networked Tic-Tac-Toe On Lan",
     img: `${tic}`,
     link: "https://github.com/gautamV19/Networked-Tic-Tac-Toe-On-Lan",
     demo: "",
-    description:
-      "• Developed a multiplayer server-based tic-tac-toe game on LAN using network programming • The game allowed for multiple clients to connect to a server, and the server could handle multiple games in parallel using multithreading. Simulated the TCP congestion protocol under the given parameters",
+    description: [
+      "Developed a multiplayer server-based tic-tac-toe game on LAN using network programming",
+      "The game allowed for multiple clients to connect to a server, and the server could handle multiple games in parallel using multithreading. Simulated the TCP congestion protocol under the given parameters",
+    ],
   },
   {
     title: "CPU Implementation",
     img: `${cpu}`,
     link: "https://github.com/gautamV19/CPU-Implementation",
     demo: "",
-    description:
-      "• Implemented ALU with 8-bit integer operations, 12-bit floating point arithmetic, and 8-bit comparator • Designed 12-bit register file with 8 registers, 2 read ports, and 1 write port; Implemented Cache-Simulator",
+    description: [
+      "Implemented ALU with 8-bit integer operations, 12-bit floating point arithmetic, and 8-bit comparator",
+      "Designed 12-bit register file with 8 registers, 2 read ports, and 1 write port; Implemented Cache-Simulator",
+    ],
   },
   {
     title: "Logistics Optimization",
     img: `${logi}`,
     link: "https://blog.ankitsanghvi.in/distributed-graph-backend-logistics-sytem/",
     demo: "https://web1.iitm.ac.in/logistics/",
-    description:
-      "• Collaborated in a 5-member team to build a delivery system, focusing on ReactJS front-end development • Developed a graphical distributed backend using TypeGraphQL(Typescript) , PostgreSQL Database, TypeORM • Coded 2 pages of Landing Page with another developer from Figma design and Build Redux store for 3 entities",
+    description: [
+      "Collaborated in a 5-member team to build a delivery system, focusing on ReactJS front-end development",
+      "Developed a graphical distributed backend using TypeGraphQL(Typescript) , PostgreSQL Database, TypeORM",
+      "Coded 2 pages of Landing Page with another developer from Figma design and Build Redux store for 3 entities",
+    ],
   },
   {
     title: "Instispace",
     img: `${instispace}`,
     link: "https://play.google.com/store/apps/details?id=com.cfi.instispace",
     demo: "",
-    description:
-      "• Developed an app for connecting like-minded people at IIT Madras through opportunities and events • Designed and built GraphQL APIs for CRUD operations in the app using TypeGraphQL and PostgreSQL • Worked on the app from ideation to successful launch, with 1000+ downloads and 4.9 rating on PlayStore",
+    description: [
+      "Developed an app for connecting like-minded people at IIT Madras through opportunities and events",
+      "Designed and built GraphQL APIs for CRUD operations in the app using TypeGraphQL and PostgreSQL",
+      "Worked on the app from ideation to successful launch, with 1000+ downloads and 4.9 rating on PlayStore",
+    ],
   },
   {
     title: "Science to School",
     img: `${nss}`,
     link: "",
     demo: "",
-    description:
+    description: [
       "Led a team of 6 developers to buid a tool for promoting Science in rural areas. This enables kids to learn science experiments through interactive quizzes and assignments. Created PostgreSQL Database with rest APIs in NodeJS and ExpressJS. Guided 2 volunteers in front-end dev in React and Material-UI, implemented Redux Store for state management",
+    ],
   },
   {
     title: "CFI Website Development",
     img: `${cfi}`,
     link: "https://cfi.iitm.ac.in",
     demo: "",
-    description:
-      "• Led ideation & wireframed UI (using Balsamiq) for CFI IIT Madras, a student-run innovation community • Developed 3 main pages using React & Material UI, converting Figma designs to web pages • Maintained website for 1.5 years, enhancing CFI's reach to investors and companies",
+    description: [
+      "Led ideation & wireframed UI (using Balsamiq) for CFI IIT Madras, a student-run innovation community",
+      "Developed 3 main pages using React & Material UI, converting Figma designs to web pages",
+      "Maintained website for 1.5 years, enhancing CFI's reach to investors and companies",
+    ],
   },
   {
     title: "Mapsmap",
     img: `${mapsmap}`,
     link: "https://github.com/gautamV19/mapsmap-server",
     demo: "",
-    description:
-      "• Crowdsource and crowdfund collaboration on maps of problems – Hackathon project in a team of 8 • Built the backend APIs, structured the database, and documented it in a team of 2, working as a lead • Most voted submission on the website and got selected as a Software Developer into Maps DAO community",
+    description: [
+      "Crowdsource and crowdfund collaboration on maps of problems – Hackathon project in a team of 8",
+      "Built the backend APIs, structured the database, and documented it in a team of 2, working as a lead",
+      "Most voted submission on the website and got selected as a Software Developer into Maps DAO community",
+    ],
   },
   {
     title: "Scoring Detector",
     img: `${scoring}`,
     link: "https://github.com/gautamV19/scoring-detector9",
     demo: "",
-    description:
+    description: [
       "Upload a video it will show is the event scoring or not. My contribution was to make api in flask to interact with ml code, and also node backend to upload the video. Stack used: Node, Express, Flask",
+    ],
   },
   {
     title: "Code Editor",
     img: `${editor}`,
     link: "",
     demo: "https://dev-editor.netlify.app",
-    description: "HTML, CSS and JavaScript code editor for rapid development",
+    description: ["HTML, CSS and JavaScript code editor for rapid development"],
   },
 ];
 

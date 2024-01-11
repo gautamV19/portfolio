@@ -8,6 +8,7 @@ import Grid from "@mui/material/Grid";
 
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { List, ListItem, ListItemText } from "@mui/material";
 
 type AppPropsFront = {
   title?: string;
@@ -16,7 +17,7 @@ type AppPropsFront = {
 };
 
 type AppPropsBack = {
-  description?: string;
+  description?: string[];
   link: string;
   demo: string;
 };
@@ -117,8 +118,13 @@ function Backside({ demo, link, description }: AppPropsBack) {
         variant="h6"
         sx={{ fontWeight: "550", height: "65%", overflow: "clip" }}
       >
-        {description ||
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veritatis eligendi minima quae sed magni, illum optio impedit vero exercitationem sapiente sit voluptates explicabo repellat et culpa vitae quo inventore."}
+        <List>
+          {description?.map((item, index) => (
+            <ListItem key={index}>
+              <ListItemText primary={item} />
+            </ListItem>
+          ))}
+        </List>
       </Typography>
 
       {link && (

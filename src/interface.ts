@@ -3,7 +3,7 @@ export interface Project {
   img: string;
   link: string;
   demo: string;
-  description: string;
+  description: string[];
 }
 export interface MakeStylesInterface {
   theme: Object;
